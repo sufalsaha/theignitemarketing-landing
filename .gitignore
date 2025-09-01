@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# prevent generated TS outputs
+*.js
+*.d.ts
+dist/

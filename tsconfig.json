@@ -1,5 +1,5 @@
 {
-  "files": [],
+  "files": ["node_modules/gsap/types/index.d.ts"],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
@@ -9,6 +9,6 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "files": ["node_modules/gsap/types/index.d.ts"]
+    "noEmit": true
   }
 }

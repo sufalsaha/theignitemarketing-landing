@@ -1,22 +1,25 @@
-// import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/HeroSection";
 import MainSection from "../components/MainSection";
 import Selaider from "../components/Selaider";
-import StepCard from "../components/StepCard";
-import SuccessCard from "../components/SuccessCard";
 
+import SuccessCard from "../components/SuccessCard";
 import Webflow from "../assets/image/img.png";
 import calandericon from "../assets/icon/Trailing Icon.svg";
 import clockicon from "../assets/icon/Trailing Icon (1).svg";
 import Proven from "../assets/image/img (1).png";
 import Transformative from "../assets/image/img (2).png";
 import Questions from "@/components/questions";
-import HeroGsap from "@/components/text";
+import Understand from "@/components/understand";
+import Contactform from "@/components/contactform";
+import { StackingCards } from "@/components/WorkingProcess";
+// import StackingCards from "@/components/WorkingProcess";
+// import WorkingProcess from "@/components/WorkingProcess";
 
 export default function Home() {
   return (
     <>
-      <HeroGsap />
-      {/* <HeroSection /> */}
+      {/* <HeroGsap /> */}
+      <HeroSection />
 
       <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
@@ -149,23 +152,15 @@ export default function Home() {
 
       <Selaider />
 
-      <section className="flex justify-center bg-[#fff]">
-        <div className="max-w-[1440px] w-full ">
-          <div className="px-[112px] py-[112px]">
-            <StepCard
-              number={1}
-              description={
-                "In the discovery and audit phase, we analyze your goals, funnel, and competitors to shape an effective marketing website strategy."
-              }
-              image={"step.image"}
-            />
-          </div>
-        </div>
-      </section>
+      <StackingCards />
 
       <SuccessCard />
 
       <MainSection />
+
+      <Understand />
+
+      <Contactform />
 
       <Questions />
 
