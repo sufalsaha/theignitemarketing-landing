@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 
 # prevent generated TS outputs
-*.js
-*.d.ts
+# *.js
+# *.d.ts
 dist/

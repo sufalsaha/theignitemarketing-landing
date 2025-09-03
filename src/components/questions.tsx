@@ -9,7 +9,7 @@ export default function Questions() {
   return (
     <section className="flex justify-center bg-[#fff]">
       <div className="max-w-[1440px] w-full ">
-        <div className="px-[112px]">
+        <div className="px-[112px] py-[80px]">
           <div className="flex flex-col items-center gap-[80px] ">
             <div className="flex flex-col gap-[18px] ">
               <h2 className="text-[48px] font-semibold text-[#2E3138] leading-[64px] text-center">

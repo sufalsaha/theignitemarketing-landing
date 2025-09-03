@@ -1,17 +1,19 @@
-import HeroSection from "../components/HeroSection";
-import MainSection from "../components/MainSection";
-import Selaider from "../components/Selaider";
+// import HeroSection from "../components/HeroSection";
+// import MainSection from "../components/MainSection";
+// import Selaider from "../components/Selaider";
 
-import SuccessCard from "../components/SuccessCard";
-import Webflow from "../assets/image/img.png";
-import calandericon from "../assets/icon/Trailing Icon.svg";
-import clockicon from "../assets/icon/Trailing Icon (1).svg";
-import Proven from "../assets/image/img (1).png";
-import Transformative from "../assets/image/img (2).png";
-import Questions from "@/components/questions";
-import Understand from "@/components/understand";
-import Contactform from "@/components/contactform";
-import { StackingCards } from "@/components/WorkingProcess";
+// import SuccessCard from "../components/SuccessCard";
+// import Webflow from "../assets/image/img.png";
+// import calandericon from "../assets/icon/Trailing Icon.svg";
+// import clockicon from "../assets/icon/Trailing Icon (1).svg";
+// import Proven from "../assets/image/img (1).png";
+// import Transformative from "../assets/image/img (2).png";
+// import Questions from "@/components/questions";
+// import Understand from "@/components/understand";
+// import Contactform from "@/components/contactform";
+// import { StackingCards } from "@/components/WorkingProcess";
+// import GoogleMap from "@/components/Googlemap";
+// import HappyClient from "@/components/Happyclient";
 // import StackingCards from "@/components/WorkingProcess";
 // import WorkingProcess from "@/components/WorkingProcess";
 
@@ -19,9 +21,9 @@ export default function Home() {
   return (
     <>
       {/* <HeroGsap /> */}
-      <HeroSection />
+      {/* <HeroSection /> */}
 
-      <section className="flex justify-center bg-[#fff]">
+      {/* <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
           <div className="px-[112px] py-[112px]">
             <div className="flex justify-between items-center bg-[#F9FAFB] py-[29px] pr-[45px] pl-[75px] rounded-[16px] ">
@@ -148,23 +150,25 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <Selaider />
+      {/* <Selaider /> */}
 
-      <StackingCards />
+      {/* <StackingCards /> */}
 
-      <SuccessCard />
+      {/* <SuccessCard /> */}
 
-      <MainSection />
+      {/* <MainSection /> */}
 
-      <Understand />
+      {/* <Understand /> */}
 
-      <Contactform />
+      {/* <Contactform /> */}
 
-      <Questions />
+      {/* <Questions /> */}
 
-      <section className="flex justify-center bg-[#fff]">
+      {/* <HappyClient /> */}
+
+      {/* <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
           <div className="px-[112px] py-[112px]">
             <div>
@@ -264,9 +268,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="flex justify-center bg-[#fff]">
+      {/* <GoogleMap /> */}
+
+      {/* <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
           <div className="px-[112px] py-[80px]">
             <div className="flex flex-col justify-center items-center gap-[18px] ">
@@ -289,7 +295,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

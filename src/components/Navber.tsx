@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/icon/image 30.svg";
+// import { SheetSideww } from "./selidermenu";
+// import { SheetSide } from "./selidermenu";
 
 export default function Navbar() {
   return (
@@ -6,15 +9,15 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Logo" className="h-12" />
-          <div className="hidden md:block">
+          <img src={logo} alt="Logo" className="h-12" />
+          {/* <div className="hidden md:block">
             <h1 className="font-bold text-sm">THE IGNITE</h1>
             <p className="text-xs tracking-wide">MARKETING</p>
-          </div>
+          </div> */}
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden md:flex items-center space-x-6 border border-gray-300 rounded-full px-6 py-2 bg-white">
+        <div className="hidden xl:flex items-center space-x-6 border border-gray-300 rounded-full px-6 py-2 bg-white">
           <Link to="/" className="text-pink-500 font-medium">
             Home
           </Link>
@@ -69,6 +72,8 @@ export default function Navbar() {
           >
             Book Now
           </Link>
+
+          {/* <SheetSideww /> */}
         </div>
       </div>
     </nav>
