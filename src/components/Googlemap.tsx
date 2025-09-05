@@ -18,7 +18,7 @@ export default function GoogleMap() {
                     width="100%"
                     height="450"
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
 
                   <div className=" w-full p-[24px] bg-[#fff]  flex flex-col gap-[13px] ">
@@ -73,7 +73,7 @@ export default function GoogleMap() {
                     width="100%"
                     height="450"
                     loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
+                    referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
                   <div className=" w-full p-[24px] bg-[#fff]  flex flex-col gap-[13px] ">
                     <h3 className="text-[24px] font-medium text-[#121212]  ">
