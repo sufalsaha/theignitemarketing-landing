@@ -1,4 +1,4 @@
-import { FreeMode, Pagination, Autoplay } from "swiper/modules";
+import { FreeMode, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import imge1 from "../assets/icon/c7d739abbc1e3b8fd27617ce21a2a5df4140dc18.jpg";
 import googleImg from "../assets/icon/image 821.svg";
@@ -10,7 +10,6 @@ import zain from "../assets/review/unnamed.png";
 
 import "swiper/css";
 import "swiper/css/free-mode";
-import "swiper/css/pagination";
 
 // import "./styles.css";
 
@@ -87,9 +86,9 @@ export default function HappyClient() {
   return (
     <section className="flex justify-center bg-[#F9F9F9]">
       <div className="max-w-[1440px] w-full overflow-hidden ">
-        <div className="px-[112px] py-[80px] ">
+        <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
           <div className=" ">
-            <div className="flex justify-between gap-[60px] ">
+            <div className="flex flex-col xl:flex-row justify-between gap-[60px] ">
               <div className="max-w-[393px] flex-shrink-0 ">
                 <h2 className="text-[48px] font-semibold text-[#2E3138] leading-[64px]  ">
                   Happy Client Stories
@@ -156,7 +155,34 @@ export default function HappyClient() {
                   // pagination={{
                   //   clickable: true,
                   // }}
-                  modules={[FreeMode, Pagination, Autoplay]}
+                  breakpoints={{
+                    320: {
+                      slidesPerView: 1.1,
+                      spaceBetween: 16,
+                      slidesOffsetBefore: 16,
+                    },
+                    640: {
+                      slidesPerView: 1.1,
+                      spaceBetween: 20,
+                      slidesOffsetBefore: 20,
+                    },
+                    768: {
+                      slidesPerView: 1.5,
+                      spaceBetween: 24,
+                      slidesOffsetBefore: 24,
+                    },
+                    1024: {
+                      slidesPerView: 2.1,
+                      spaceBetween: 28,
+                      slidesOffsetBefore: 24,
+                    },
+                    1280: {
+                      slidesPerView: 2.8,
+                      spaceBetween: 32,
+                      slidesOffsetBefore: 24,
+                    },
+                  }}
+                  modules={[FreeMode, Autoplay]}
                   className="mySwiper w-full "
                 >
                   {reviews.map((e, i) => {

@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 import GoogleMetaImg from "../assets/image/Rectangle 39844 (1).png";
@@ -65,33 +65,35 @@ export default function Selaider() {
   ];
 
   return (
-    <section className="flex justify-center bg-white">
+    <section className="flex justify-center bg-[#F9FAFB]">
       <div className="max-w-[1440px] w-full">
-        <div className="py-10">
-          <div className=" px-[112px] flex justify-between items-center">
-            <div className="flex flex-col gap-[12px] w-full max-w-[637px] ">
-              <h2 className="text-[48px] font-semibold text-[#121212] leading-[64px]">
+        <div className="py-[50px]">
+          <div className=" px-[20px] md:px-[50px] xl:px-[112px] flex justify-between items-center">
+            <div className="flex flex-col gap-[12px] w-full  ">
+              <h2 className=" text-[32px] leading-[48px] xl:text-[48px] xl:leading-[64px] font-semibold text-[#121212] ">
                 What We Do Best
               </h2>
-              <p className="text-[16px] font-normal text-[#5F6572] leading-[24px]">
-                Expand the capabilities of the Linear system with a wide variety
-                of integrations that keep everyone in your organization aligned
-                and focused.
-              </p>
-            </div>
-            <div className="flex gap-[12px] mb-4">
-              <button
-                onClick={() => swiperRef.current?.slidePrev()}
-                className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer "
-              >
-                <ChevronLeft />
-              </button>
-              <button
-                onClick={() => swiperRef.current?.slideNext()}
-                className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer"
-              >
-                <ChevronRight />
-              </button>
+              <div className=" flex items-end justify-between gap-[20px] ">
+                <p className="text-[16px] font-normal text-[#5F6572] leading-[24px]">
+                  Expand the capabilities of the Linear system with a wide
+                  variety of integrations that keep everyone in your
+                  organization aligned and focused.
+                </p>
+                <div className="flex items-end justify-end gap-[12px] ">
+                  <button
+                    onClick={() => swiperRef.current?.slidePrev()}
+                    className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer "
+                  >
+                    <ChevronLeft />
+                  </button>
+                  <button
+                    onClick={() => swiperRef.current?.slideNext()}
+                    className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer"
+                  >
+                    <ChevronRight />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           {/* Navigation Buttons */}

@@ -91,8 +91,8 @@ export default function Contactform() {
   return (
     <section className="flex justify-center bg-[#fff]">
       <div className="max-w-[1440px] w-full ">
-        <div className="px-[112px] py-[112px]">
-          <div className="flex justify-between gap-[48px] ">
+        <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
+          <div className="flex flex-col lg:flex-row justify-between gap-[48px] ">
             <div>
               <h3 className="text-[40px] font-semibold text-[#000000] leading-[48px] ">
                 Book A Free 30-Minute Consultation Call
@@ -146,14 +146,6 @@ export default function Contactform() {
             <div className="max-w-[620px] ">
               <div className="border-2  border-[#EBEBEB] p-[32px] rounded-[16px] w-full    ">
                 <div className={`w-full `}>
-                  {/* <div className="flex flex-col gap-[16px]">
-                    <h3 className="text-[#2E3138] text-[24px] font-[600] leading-[32px]   ">
-                      Contact
-                    </h3>
-                    <p className="text-[#5F6572] text-[16px] font-[500] leading-[28px]">
-                      {` We're here to help and answer any question you might have. We look forward to hearincg from you.`}
-                    </p>
-                  </div> */}
                   <div className=" ">
                     <Form {...form}>
                       <form
@@ -219,25 +211,7 @@ export default function Contactform() {
                             </FormItem>
                           )}
                         />
-                        {/* <FormField
-                          control={form.control}
-                          name="subject"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-[#5F6572] text-[14px] font-[500] leading-[16px]">
-                                Subject*
-                              </FormLabel>
-                              <FormControl className="text-[#B5B5B5] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
-                                <Input
-                                  placeholder="Subject"
-                                  {...field}
-                                  className="h-full"
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        /> */}
+
                         <FormField
                           control={form.control}
                           name="message"
@@ -277,37 +251,6 @@ export default function Contactform() {
                                 {/* <p> </p> */}
                               </button>
                             ))}
-
-                            {/* <button className=" px-[16px] py-[10px] border border-[#DDDDDD] rounded-[6px] ">
-                              <span className="text-[#121212] text-[14px] font-[400] leading-[20px] ">
-                                Digital Marketing
-                              </span>
-                            </button>
-                            <button className=" px-[16px] py-[10px] border border-[#DDDDDD] rounded-[6px] ">
-                              <span className="text-[#121212] text-[14px] font-[400] leading-[20px] ">
-                                Market Research
-                              </span>
-                            </button>
-                            <button className=" px-[16px] py-[10px] border border-[#DDDDDD] rounded-[6px] ">
-                              <span className="text-[#121212] text-[14px] font-[400] leading-[20px] ">
-                                Creative Layouts
-                              </span>
-                            </button>
-                            <button className=" px-[16px] py-[10px] border border-[#DDDDDD] rounded-[6px] ">
-                              <span className="text-[#121212] text-[14px] font-[400] leading-[20px] ">
-                                SEO & Backlinks
-                              </span>
-                            </button>
-                            <button className=" px-[16px] py-[10px] border border-[#DDDDDD] rounded-[6px] ">
-                              <span className="text-[#121212] text-[14px] font-[400] leading-[20px] ">
-                                Email Marketing
-                              </span>
-                            </button>
-                            <button className=" px-[16px] py-[10px] border border-[#DDDDDD] rounded-[6px] ">
-                              <span className="text-[#121212] text-[14px] font-[400] leading-[20px] ">
-                                Brand Development
-                              </span>
-                            </button> */}
                           </div>
                         </div>
 

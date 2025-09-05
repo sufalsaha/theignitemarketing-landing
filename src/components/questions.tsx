@@ -9,10 +9,10 @@ export default function Questions() {
   return (
     <section className="flex justify-center bg-[#fff]">
       <div className="max-w-[1440px] w-full ">
-        <div className="px-[112px] py-[80px]">
+        <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
           <div className="flex flex-col items-center gap-[80px] ">
             <div className="flex flex-col gap-[18px] ">
-              <h2 className="text-[48px] font-semibold text-[#2E3138] leading-[64px] text-center">
+              <h2 className="text-[32px] leading-[48px] md:text-[48px] font-semibold text-[#2E3138] lg:leading-[64px] text-center">
                 Got questions? We have answers!
               </h2>
               <p className="text-[20px] font-normal text-[#5F6572] leading-[30px] text-center">

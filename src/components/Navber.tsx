@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/icon/image 30.svg";
+import { SheetSideww } from "./selidermenu";
 // import { SheetSideww } from "./selidermenu";
 // import { SheetSide } from "./selidermenu";
 
@@ -9,11 +10,9 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <img src={logo} alt="Logo" className="h-12" />
-          {/* <div className="hidden md:block">
-            <h1 className="font-bold text-sm">THE IGNITE</h1>
-            <p className="text-xs tracking-wide">MARKETING</p>
-          </div> */}
+          <Link to="/">
+            <img src={logo} alt="Logo" className="h-12" />
+          </Link>
         </div>
 
         {/* Navigation Links */}
@@ -65,7 +64,7 @@ export default function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <div>
+        <div className="flex items-center gap-[40px] ">
           <Link
             to="/book"
             className="px-6 py-2 rounded-full text-white font-medium bg-gradient-to-r from-pink-500 to-blue-500 shadow-md"
@@ -73,7 +72,9 @@ export default function Navbar() {
             Book Now
           </Link>
 
-          {/* <SheetSideww /> */}
+          <div className="mx-auto  ">
+            <SheetSideww />
+          </div>
         </div>
       </div>
     </nav>

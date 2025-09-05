@@ -1,220 +1,4 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable react-hooks/rules-of-hooks */
-// /* eslint-disable react-hooks/rules-of-hooks */
-// import Autoplay from "embla-carousel-autoplay";
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   // type CarouselApi,
-// } from "@/components/ui/carousel";
-// import StepCard from "./StepCard";
-// // import step from "../assets/image/Group 77 (1).svg";
-// // import stepOne from "../assets/image/image 830.png";
-// import stepTwo from "../assets/image/image 852.png";
-// import { useRef } from "react";
-// // import { useState } from "react";
-// // import stepThere from "../assets/image/image 853.png";
-// // import stepFoer from "../assets/image/image 854.png";
-
-// const elementRef = useRef<HTMLDivElement>(null);
-
-// export default function WorkingProcess() {
-//   // const [api, setApi] = useState<CarouselApi>();
-//   return (
-//     <section className="flex justify-center bg-[#fff]">
-//       <div className="max-w-[1440px] w-full ">
-//         <div className="px-[112px] py-[112px] flex flex-col gap-[30px]">
-//           <div>
-//             <div className="mt-[68px] md:hidden">
-//               <Carousel
-//                 opts={{ loop: true }}
-//                 // setApi={setApi}
-//                 plugins={[
-//                   Autoplay({
-//                     delay: 5000,
-//                     stopOnFocusIn: false,
-//                     stopOnInteraction: false,
-//                     stopOnMouseEnter: true,
-//                   }),
-//                 ]}
-//               >
-//                 <CarouselContent>
-//                   <CarouselItem>
-//                     <div className=" w-[100%] sticky top-[120px] bg-[#fff] dark:bg-[#0D1825]">
-//                       <div className=" flex flex-col gap-[24px] ">
-//                         <StepCard
-//                           number={3}
-//                           description={
-//                             "Execution means turning plans into action. It involves organizing tasks, managing resources, and ensuring goals are completed efficiently and successfully."
-//                           }
-//                           image={stepTwo}
-//                         />
-//                       </div>
-//                     </div>
-//                   </CarouselItem>
-//                 </CarouselContent>
-//                 {/* <CarouselPrevious variant={"link"} />
-//           <CarouselNext variant={"link"} /> */}
-//               </Carousel>
-//               {/* <div className="flex items-center justify-center gap-2 mt-[20px]">
-//                 {Array.from({ length: count }).map((_, i) => (
-//                   <div
-//                     key={i}
-//                     className={clsx("transition-all rounded-full", {
-//                       "w-[8px] xl:w-[12px] h-[8px] xl:h-[12px] bg-[#EBEBEB] dark:bg-[#3D4651]":
-//                         current != i,
-//                       "w-[12px] xl:w-[16px] h-[12px] xl:h-[16px] bg-[#5779F0] dark:bg-[#7792F3]":
-//                         current == i,
-//                     })}
-//                   ></div>
-//                 ))}
-//               </div> */}
-//             </div>
-//             <div className="hidden md:block  mt-[80px]">
-//               <div
-//                 ref={elementRef}
-//                 className=" relative flex flex-col justify-center items-center"
-//               >
-//                 {/* <div className="absolute w-[16px] h-full z-10  bg-[#EBEBEB] dark:bg-[#202A36] rounded-[20px] md:left-[45%] lg:left-[40%] ">
-//                     <div
-//                       className="bg-[#F5AB0C] w-[16px] h-[233px] rounded-[20px] sticky"
-//                       style={{ top: position || 0 }}
-//                     ></div>
-//                   </div> */}
-//                 {/* <div className=" w-[100%] sticky top-[120px] bg-[#fff] dark:bg-[#0D1825]">
-//                     <div className="flex md:justify-center md:gap-[80px] lg:justify-between  ">
-//                       <div className="w-[311px] flex flex-col gap-[19px] ">
-//                         <p className="text-[#F5AB0C] text-[18px] font-medium leading-[135%]">
-//                           STEP 01
-//                         </p>
-//                         <h4 className="text-[#2E3138] dark:text-[#FFFFFF]  text-[40px] font-bold leading-[54px]">
-//                           Strategy Development
-//                         </h4>
-//                       </div>
-//                       <div className="md:w-[350px] xl:w-[558px] md:flex md:flex-col md:gap-[16px] ">
-//                         <div className="flex  gap-[10px]">
-//                           <div className="bg-[#54565C] dark:bg-[#FFFFFF] h-[1px] w-[1px] p-[5px] rounded-full  mt-[8px] "></div>
-//                           <p className="text-[#5F6572] dark:text-[#888E9B] text-[18px] font-medium leading-[135%]">
-//                             <strong className="text-[#2E3138] dark:text-[#FFFFFF]">
-//                               Goal Setting:{" "}
-//                             </strong>
-//                             Clearly define short-term and long-term objectives
-//                             to align with overall business goals.
-//                           </p>
-//                         </div>
-//                         <div className="flex  gap-[10px] ">
-//                           <div className="bg-[#54565C] dark:bg-[#FFFFFF] h-[1px] w-[1px] p-[5px] rounded-full  mt-[8px] "></div>
-//                           <p className="text-[#5F6572] dark:text-[#888E9B] text-[18px] font-medium leading-[135%]">
-//                             <strong className="text-[#2E3138] dark:text-[#FFFFFF]">
-//                               Market Analysis:{" "}
-//                             </strong>
-//                             Research industry trends, competitors, and customer
-//                             needs to identify opportunities and challenges.
-//                           </p>
-//                         </div>
-//                         <div className="mt-[8px]">
-//                           <Image
-//                             src={steps1}
-//                             alt="steps1 "
-//                             className=" h-[259px]"
-//                           />
-//                         </div>
-//                       </div>
-//                     </div>
-//                   </div> */}
-
-//                 <div className="w-[100%] pt-[80px]  sticky top-[120px] bg-[#fff] dark:bg-[#0D1825]">
-//                   <div className="flex md:justify-center md:gap-[80px] lg:justify-between   ">
-//                     <StepCard
-//                       number={3}
-//                       description={
-//                         "Execution means turning plans into action. It involves organizing tasks, managing resources, and ensuring goals are completed efficiently and successfully."
-//                       }
-//                       image={stepTwo}
-//                     />
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           {/* <div className="flex gap-[50px] ">
-//               <div className="w-[500px] ">
-//                 <div className="flex flex-col space-y-6 relative">
-
-//                   <div className="absolute left-3 top-0 bottom-0 w-0.5 bg-gray-200"></div>
-
-//                   {steps.map((step, index) => (
-//                     <div
-//                       key={index}
-//                       className="flex items-center space-x-4 relative"
-//                     >
-//                       <div
-//                         className="w-6 h-6 rounded-full border-2 flex items-center justify-center bg-white z-10
-//             transition-all duration-300
-//             border-gray-300"
-//                       >
-//                         <div
-//                           className={`w-2 h-2 rounded-full ${
-//                             step.active ? "bg-pink-500" : "bg-gray-500"
-//                           }`}
-//                         ></div>
-//                       </div>
-//                       <p
-//                         className={`font-semibold ${
-//                           step.active ? "text-pink-500" : "text-gray-600"
-//                         }`}
-//                       >
-//                         {step.title}
-//                       </p>
-//                     </div>
-//                   ))}
-//                 </div>
-//               </div>
-
-//               <div className="flex flex-col gap-[30px]">
-//                 <StepCard
-//                   number={1}
-//                   description={
-//                     "In the discovery and audit phase, we analyze your goals, funnel, and competitors to shape an effective marketing website strategy."
-//                   }
-//                   image={step}
-//                 />
-//                 <StepCard
-//                   number={2}
-//                   description={
-//                     "KPIs, targeting, and full-funnel mapping guide strategic planning by aligning goals, identifying audiences, and optimizing each customer journey stage."
-//                   }
-//                   image={stepOne}
-//                 />
-//                 <StepCard
-//                   number={3}
-//                   description={
-//                     "Execution means turning plans into action. It involves organizing tasks, managing resources, and ensuring goals are completed efficiently and successfully."
-//                   }
-//                   image={stepTwo}
-//                 />
-//                 <StepCard
-//                   number={4}
-//                   description={
-//                     "Optimization works by improving a process or system to achieve the best results with minimal effort, time, or resources efficiently."
-//                   }
-//                   image={stepThere}
-//                 />
-//                 <StepCard
-//                   number={5}
-//                   description={
-//                     "Reporting and scaling help businesses track performance, identify growth opportunities, optimize resources, and expand efficiently using accurate data insights."
-//                   }
-//                   image={stepFoer}
-//                 />
-//               </div>
-//             </div> */}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 
 import React, { useEffect, useRef, useState } from "react";
 import discoveryImg from "@/assets/image/Group 77.svg";
@@ -223,6 +7,7 @@ import executionImg from "@/assets/image/Group 77.svg";
 import optimizationImg from "@/assets/image/Group 77.svg";
 import reportingImg from "@/assets/image/Group 77.svg";
 import StepCard from "./StepCard";
+import OurprOcess from "./ourprocess";
 
 interface ProcessStep {
   id: number;
@@ -328,9 +113,9 @@ export const StackingCards: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-soft">
+    <div className="lg:min-h-screen bg-gradient-soft py-[50px] lg:py-[80px] ">
       {/* Header */}
-      <div className="text-center py-20 px-4">
+      <div className="text-center p-[20px] md:p-[50px] lg:p-[80px] ">
         <h1 className="text-5xl font-bold mb-6 text-[#000]">Our Process</h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
           A comprehensive approach to digital transformation that delivers
@@ -338,8 +123,12 @@ export const StackingCards: React.FC = () => {
         </p>
       </div>
 
+      <div className="px-[20px] mt-[40px] lg:hidden ">
+        <OurprOcess />
+      </div>
+
       {/* Main Content */}
-      <div className="flex max-w-7xl mx-auto px-4">
+      <div className="lg:flex max-w-7xl mx-auto px-4 hidden">
         {/* Left Navigation */}
         <div className="w-80 flex-shrink-0 sticky top-20 h-fit">
           <nav className="space-y-2">

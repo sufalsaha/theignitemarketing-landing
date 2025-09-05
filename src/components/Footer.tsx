@@ -1,4 +1,6 @@
 import React from "react";
+import logo from "../assets/icon/image 30.svg";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -9,11 +11,13 @@ const Footer: React.FC = () => {
           <div className="flex flex-col space-y-4">
             <div className="flex items-center space-x-2">
               {/* This is a placeholder for the logo. You should replace the src with your actual logo path. */}
-              <img
-                src="/path/to/your/logo.png"
-                alt="The Ignite Marketing Logo"
-                className="h-10"
-              />
+              <Link to={"/"}>
+                <img
+                  src={logo}
+                  alt="The Ignite Marketing Logo"
+                  className="w-[70px]"
+                />
+              </Link>
             </div>
             <p className="text-sm max-w-sm">
               Empowering businesses with insightful data analysis solutions to

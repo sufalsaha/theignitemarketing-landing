@@ -1,32 +1,38 @@
-// import HeroSection from "../components/HeroSection";
-// import MainSection from "../components/MainSection";
-// import Selaider from "../components/Selaider";
+import { StackingCards } from "@/components/WorkingProcess";
+import HeroSection from "../components/HeroSection";
+import Selaider from "../components/Selaider";
+import Understand from "@/components/understand";
+import HappyClient from "@/components/Happyclient";
+import Questions from "@/components/questions";
+import Contactform from "@/components/contactform";
+// import SuccessCard from "@/components/SuccessCard";
 
 // import SuccessCard from "../components/SuccessCard";
-// import Webflow from "../assets/image/img.png";
-// import calandericon from "../assets/icon/Trailing Icon.svg";
-// import clockicon from "../assets/icon/Trailing Icon (1).svg";
-// import Proven from "../assets/image/img (1).png";
-// import Transformative from "../assets/image/img (2).png";
+import Webflow from "../assets/image/img.png";
+import calandericon from "../assets/icon/Trailing Icon.svg";
+import clockicon from "../assets/icon/Trailing Icon (1).svg";
+import Proven from "../assets/image/img (1).png";
+import Transformative from "../assets/image/img (2).png";
+import GoogleMap from "@/components/Googlemap";
 // import Questions from "@/components/questions";
 // import Understand from "@/components/understand";
 // import Contactform from "@/components/contactform";
-// import { StackingCards } from "@/components/WorkingProcess";
+
 // import GoogleMap from "@/components/Googlemap";
 // import HappyClient from "@/components/Happyclient";
-// import StackingCards from "@/components/WorkingProcess";
+
 // import WorkingProcess from "@/components/WorkingProcess";
 
 export default function Home() {
   return (
     <>
       {/* <HeroGsap /> */}
-      {/* <HeroSection /> */}
+      <HeroSection />
 
-      {/* <section className="flex justify-center bg-[#fff]">
+      <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
-          <div className="px-[112px] py-[112px]">
-            <div className="flex justify-between items-center bg-[#F9FAFB] py-[29px] pr-[45px] pl-[75px] rounded-[16px] ">
+          <div className="px-[20px] py-[50px] xl:px-[112px] xl:py-[112px]">
+            <div className="flex flex-col justify-between items-center lg:flex-row gap-[50px] bg-[#F9FAFB] py-[29px] px-[20px]  xl:pr-[45px] xl:pl-[75px] rounded-[16px] border border-[#E8E8E8] ">
               <div className="max-w-[498px]">
                 <h2 className="text-[32px] font-semibold text-[#121212] leading-[48px] tracking-[-1px]">
                   We’re not just a team. We’re your digital marketing backbone.
@@ -97,7 +103,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex gap-[24px] mt-[24px] ">
+            <div className="flex flex-col items-center justify-center lg:flex-row gap-[24px] mt-[24px] ">
               <div className="max-w-[446px]">
                 <img
                   src="../assets/image/Container.png"
@@ -107,7 +113,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-center gap-[24px] w-full ">
-                <div className="flex justify-between gap-[20px] bg-[#F9FAFB] py-[42px] px-[32px] rounded-[16px] border border-[#E8E8E8]   ">
+                <div className="flex flex-col items-center justify-center md:flex-row md:justify-between gap-[20px] bg-[#F9FAFB] py-[42px] px-[32px] rounded-[16px] border border-[#E8E8E8]   ">
                   <div className="max-w-[309px] flex flex-col gap-[14px] justify-center ">
                     <h2 className="text-[32px] font-semibold text-[#121212] leading-[48px]">
                       100+Clients Served{" "}
@@ -127,7 +133,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex justify-between gap-[20px] bg-[#F9FAFB] py-[42px] px-[32px] rounded-[16px] border border-[#E8E8E8]   ">
+                <div className="flex flex-col items-center justify-center md:flex-row md:justify-between gap-[20px] bg-[#F9FAFB] py-[42px] px-[32px] rounded-[16px] border border-[#E8E8E8]   ">
                   <div className="max-w-[309px] flex flex-col gap-[14px] justify-center ">
                     <h2 className="text-[32px] font-semibold text-[#121212] leading-[48px]">
                       5+ Years Experience
@@ -150,27 +156,27 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <Selaider /> */}
+      <Selaider />
 
-      {/* <StackingCards /> */}
+      <StackingCards />
 
       {/* <SuccessCard /> */}
 
       {/* <MainSection /> */}
 
-      {/* <Understand /> */}
+      <Understand />
 
-      {/* <Contactform /> */}
+      <Contactform />
 
-      {/* <Questions /> */}
+      <Questions />
 
-      {/* <HappyClient /> */}
+      <HappyClient />
 
-      {/* <section className="flex justify-center bg-[#fff]">
+      <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
-          <div className="px-[112px] py-[112px]">
+          <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
             <div>
               <div className="flex flex-col justify-center items-center gap-[18px]  ">
                 <h2 className="text-[48px] font-semibold text-[#2E3138] leading-[64px] text-center ">
@@ -182,7 +188,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex gap-[32px] mt-[80px] ">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[32px] mt-[80px] ">
                 <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full">
                   <img
                     src={Webflow}
@@ -268,15 +274,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <GoogleMap /> */}
+      <GoogleMap />
 
-      {/* <section className="flex justify-center bg-[#fff]">
+      <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
-          <div className="px-[112px] py-[80px]">
+          <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
             <div className="flex flex-col justify-center items-center gap-[18px] ">
-              <h2 className="text-[48px] font-semibold text-[#121212] leading-[64px] text-center ">
+              <h2 className="text-[32px] md:text-[48px] font-semibold text-[#121212] md:leading-[64px] text-center ">
                 Ready to Accelerate Your Growth
               </h2>
               <p className="max-w-[600px] text-[20px] font-normal text-[#5F6572] leading-[30px] text-center ">
@@ -295,7 +301,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </>
   );
 }
