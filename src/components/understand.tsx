@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "./ui/table";
-import ClickUp from "../assets/image/Group 78.png";
+import ClickUp from "../assets/allimg/Group 78.png";
 
 export default function Understand() {
   return (

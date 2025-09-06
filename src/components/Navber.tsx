@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/icon/image 30.svg";
+import logo from "../assets/allimg/image 30.svg";
 import { SheetSideww } from "./selidermenu";
 // import { SheetSideww } from "./selidermenu";
 // import { SheetSide } from "./selidermenu";

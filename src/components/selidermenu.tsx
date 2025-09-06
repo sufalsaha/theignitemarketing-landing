@@ -1,6 +1,6 @@
 // import { Link } from "react-router-dom";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
-import menu from "../assets/icon/menu-2-line.svg";
+import menu from "../assets/allimg/menu-2-line.svg";
 import {
   SidebarMenu,
   SidebarMenuButton,

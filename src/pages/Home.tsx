@@ -5,23 +5,25 @@ import Understand from "@/components/understand";
 import HappyClient from "@/components/Happyclient";
 import Questions from "@/components/questions";
 import Contactform from "@/components/contactform";
-// import SuccessCard from "@/components/SuccessCard";
 
-// import SuccessCard from "../components/SuccessCard";
-import Webflow from "../assets/image/img.png";
-import calandericon from "../assets/icon/Trailing Icon.svg";
-import clockicon from "../assets/icon/Trailing Icon (1).svg";
-import Proven from "../assets/image/img (1).png";
-import Transformative from "../assets/image/img (2).png";
+import Webflow from "../assets/allimg/img.png";
+import calandericon from "../assets/allimg/Trailing Icon.svg";
+import clockicon from "../assets/allimg/Trailing Icon (1).svg";
+import Proven from "../assets/allimg/img (1).png";
+import Transformative from "../assets/allimg/img (2).png";
+import img1 from "../assets/allimg/65e1f5506f78e1e528ce1414_raiting.svg.png";
+import ster from "../assets/allimg/Vector.svg";
+import bgimg1 from "../assets/allimg/Background+Border (1).png";
+import bgimg2 from "../assets/allimg/Backgrounder (1).png";
+import bgimg3 from "../assets/allimg/Background+Border (2).png";
+import bgimg4 from "../assets/allimg/Background+Ber (1).png";
+import bgimg5 from "../assets/allimg/Backgroundr (2).png";
+import bgimg6 from "../assets/allimg/Background+Border (3).png";
+import bgimg7 from "../assets/allimg/Background+Border (4).png";
+import container from "../assets/allimg/Container.png";
+import container1 from "../assets/allimg/Frame 1618873223.png";
+import container2 from "../assets/allimg/image 841.png";
 import GoogleMap from "@/components/Googlemap";
-// import Questions from "@/components/questions";
-// import Understand from "@/components/understand";
-// import Contactform from "@/components/contactform";
-
-// import GoogleMap from "@/components/Googlemap";
-// import HappyClient from "@/components/Happyclient";
-
-// import WorkingProcess from "@/components/WorkingProcess";
 
 export default function Home() {
   return (
@@ -43,18 +45,14 @@ export default function Home() {
                   methods across global markets.
                 </p>
                 <div className="flex  items-center">
-                  <img
-                    src="../assets/image/65e1f5506f78e1e528ce1414_raiting.svg.png"
-                    alt=""
-                    className="w-[118px]"
-                  />
+                  <img src={img1} alt="" className="w-[118px]" />
                   <div>
-                    <div className="flex">
-                      <img src="../assets/icon/Vector.svg" alt="" />
-                      <img src="../assets/icon/Vector.svg" alt="" />
-                      <img src="../assets/icon/Vector.svg" alt="" />
-                      <img src="../assets/icon/Vector.svg" alt="" />
-                      <img src="../assets/icon/Vector.svg" alt="" />
+                    <div className="flex gap-[4px] mb-[8px]">
+                      <img src={ster} alt="ster" />
+                      <img src={ster} alt="ster" />
+                      <img src={ster} alt="ster" />
+                      <img src={ster} alt="ster" />
+                      <img src={ster} alt="ster" />
                     </div>
                     <p>Rated on various platforms</p>
                   </div>
@@ -62,54 +60,22 @@ export default function Home() {
               </div>
               <div className="flex gap-[8px] ">
                 <div className="flex flex-col gap-[8px] ">
-                  <img
-                    src="../assets/image/Background+Border (1).png"
-                    alt=""
-                    className="w-[296px] h-[196px] "
-                  />
-                  <img
-                    src="../assets/image/Backgrounder (1).png"
-                    alt=""
-                    className="w-[296px] h-[137px] "
-                  />
-                  <img
-                    src="../assets/image/Background+Border (2).png"
-                    alt=""
-                    className="w-[296px] h-[96px] "
-                  />
+                  <img src={bgimg1} alt="" className="w-[296px] h-[196px] " />
+                  <img src={bgimg2} alt="" className="w-[296px] h-[137px] " />
+                  <img src={bgimg3} alt="" className="w-[296px] h-[96px] " />
                 </div>
                 <div className="flex flex-col gap-[8px] ">
-                  <img
-                    src="../assets/image/Background+Ber (1).png"
-                    alt=""
-                    className="w-[152px] h-[123px] "
-                  />
-                  <img
-                    src="../assets/image/Backgroundr (2).png"
-                    alt=""
-                    className="w-[152px] h-[95px] "
-                  />
-                  <img
-                    src="../assets/image/Background+Border (3).png"
-                    alt=""
-                    className="w-[152px] h-[108px] "
-                  />
-                  <img
-                    src="../assets/image/Background+Border (4).png"
-                    alt=""
-                    className="w-[152px] h-[92px] "
-                  />
+                  <img src={bgimg4} alt="" className="w-[152px] h-[123px] " />
+                  <img src={bgimg5} alt="" className="w-[152px] h-[95px] " />
+                  <img src={bgimg6} alt="" className="w-[152px] h-[108px] " />
+                  <img src={bgimg7} alt="" className="w-[152px] h-[92px] " />
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col items-center justify-center lg:flex-row gap-[24px] mt-[24px] ">
               <div className="max-w-[446px]">
-                <img
-                  src="../assets/image/Container.png"
-                  alt="Container"
-                  className="w-full "
-                />
+                <img src={container} alt="Container" className="w-full " />
               </div>
 
               <div className="flex flex-col justify-center gap-[24px] w-full ">
@@ -126,7 +92,7 @@ export default function Home() {
                   </div>
                   <div className="max-w-[270px] max-h-[244px] ">
                     <img
-                      src="../assets/image/Frame 1618873223.png"
+                      src={container1}
                       alt="1618873223"
                       className="w-full h-full "
                     />
@@ -146,8 +112,8 @@ export default function Home() {
                   </div>
                   <div>
                     <img
-                      src="../assets/image/image 841.png"
-                      alt="1618873223"
+                      src={container2}
+                      alt="container2"
                       className="w-[224px] h-[195px] "
                     />
                   </div>

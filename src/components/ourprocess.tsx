@@ -1,10 +1,10 @@
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import discoveryImg from "@/assets/image/Group 77.svg";
-import strategyImg from "@/assets/image/Group 77.svg";
-import executionImg from "@/assets/image/Group 77.svg";
-import optimizationImg from "@/assets/image/Group 77.svg";
-import reportingImg from "@/assets/image/Group 77.svg";
+import discoveryImg from "../assets/allimg/Group 77.svg";
+import strategyImg from "../assets/allimg/Group 77.svg";
+import executionImg from "../assets/allimg/Group 77.svg";
+import optimizationImg from "../assets/allimg/Group 77.svg";
+import reportingImg from "../assets/allimg/Group 77.svg";
 
 import "swiper/css";
 import "swiper/css/free-mode";

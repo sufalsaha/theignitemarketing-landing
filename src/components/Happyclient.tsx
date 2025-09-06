@@ -1,12 +1,12 @@
 import { FreeMode, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import imge1 from "../assets/icon/c7d739abbc1e3b8fd27617ce21a2a5df4140dc18.jpg";
-import googleImg from "../assets/icon/image 821.svg";
-import ster from "../assets/icon/star-fill.svg";
-import googleImg1 from "../assets/icon/image 359.svg";
-import MaryamArif from "../assets/review/unnamed (1).png";
-import AlyanKhan from "../assets/review/unnamed (2).png";
-import zain from "../assets/review/unnamed.png";
+import googleImg from "../assets/allimg/image 821.svg";
+import ster from "../assets/allimg/star-fill.svg";
+import googleImg1 from "../assets/allimg/image 359.svg";
+import MaryamArif from "../assets/allimg/unnamed (1).png";
+import AlyanKhan from "../assets/allimg/unnamed (2).png";
+import zain from "../assets/allimg/unnamed.png";
 
 import "swiper/css";
 import "swiper/css/free-mode";

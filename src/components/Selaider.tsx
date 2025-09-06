@@ -4,10 +4,10 @@ import "swiper/css";
 // import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-import GoogleMetaImg from "../assets/image/Rectangle 39844 (1).png";
-import ConversionImg from "../assets/image/Rectangle 39844 (3).png";
-import ContentImg from "../assets/image/Rectangle 39844 (5).png";
-import SeoImg from "../assets/image/Rectangle 39844 (7).png";
+import GoogleMetaImg from "../assets/allimg/Rectangle 39844 (1).png";
+import ConversionImg from "../assets/allimg/Rectangle 39844 (3).png";
+import ContentImg from "../assets/allimg/Rectangle 39844 (5).png";
+import SeoImg from "../assets/allimg/Rectangle 39844 (7).png";
 
 import type { Swiper as SwiperType } from "swiper";
 import { ChevronLeft, ChevronRight } from "lucide-react";

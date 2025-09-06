@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import React, { useEffect, useRef, useState } from "react";
-import discoveryImg from "@/assets/image/Group 77.svg";
-import strategyImg from "@/assets/image/Group 77.svg";
-import executionImg from "@/assets/image/Group 77.svg";
-import optimizationImg from "@/assets/image/Group 77.svg";
-import reportingImg from "@/assets/image/Group 77.svg";
+import discoveryImg from "../assets/allimg/Group 77.svg";
+import strategyImg from "../assets/allimg/Group 77.svg";
+import executionImg from "../assets/allimg/Group 77.svg";
+import optimizationImg from "../assets/allimg/Group 77.svg";
+import reportingImg from "../assets/allimg/Group 77.svg";
 import StepCard from "./StepCard";
 import OurprOcess from "./ourprocess";
 

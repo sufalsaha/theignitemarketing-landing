@@ -1,4 +1,4 @@
-import ster from "../assets/icon/star-fill.svg";
+import ster from "../assets/allimg/star-fill.svg";
 
 export default function GoogleMap() {
   return (

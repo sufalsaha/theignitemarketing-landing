@@ -1,8 +1,8 @@
 import { RotateCw } from "lucide-react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import ClickUp from "../assets/icon/checkbox-circle-line.svg";
-import Calender from "../assets/icon/calendar-2-line.svg";
-import ArhamSheikh from "../assets/image/Rectangle 7.png";
+import ClickUp from "../assets/allimg/checkbox-circle-line.svg";
+import Calender from "../assets/allimg/calendar-2-line.svg";
+import ArhamSheikh from "../assets/allimg/Rectangle 7.png";
 import {
   Form,
   FormControl,
