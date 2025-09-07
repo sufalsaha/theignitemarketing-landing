@@ -24,6 +24,9 @@ import container from "../assets/allimg/Container.png";
 import container1 from "../assets/allimg/Frame 1618873223.png";
 import container2 from "../assets/allimg/image 841.png";
 import GoogleMap from "@/components/Googlemap";
+import LogoGrid from "@/components/MainSection";
+import SuccessCard from "@/components/SuccessCard";
+// import SuccessCard from "@/components/SuccessCard";
 
 export default function Home() {
   return (
@@ -128,9 +131,11 @@ export default function Home() {
 
       <StackingCards />
 
-      {/* <SuccessCard /> */}
+      <SuccessCard />
 
       {/* <MainSection /> */}
+
+      <LogoGrid />
 
       <Understand />
 

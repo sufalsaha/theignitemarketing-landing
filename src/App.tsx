@@ -8,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
+        {/* /home-custom */}
         <Route path="/" element={<Home />} />
         <Route path="/who-we-are" element={<h1>Who We Are</h1>} />
         <Route path="/services/seo" element={<h1>SEO Services</h1>} />

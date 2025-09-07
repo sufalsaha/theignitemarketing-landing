@@ -136,17 +136,21 @@ export default function Selaider() {
                 },
               }}
               modules={[Pagination]}
-              className="mySwiper"
+              className="mySwiper max-h-[480px]"
             >
               {selider.map((item, i) => (
-                <SwiperSlide key={i} className="!h-auto flex mb-3">
+                <SwiperSlide
+                  key={i}
+                  className="max-h-[470px] !h-auto flex mb-3"
+                >
                   <div className="w-full max-w-[375px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full">
                     <img
                       src={item.img}
                       alt={item.title}
                       className="w-full h-auto object-cover"
                     />
-                    <div className="flex flex-col gap-3 p-6 flex-grow">
+                    {/* flex-grow */}
+                    <div className="flex flex-col gap-3 p-6 ">
                       <h3 className="text-[20px] font-semibold text-[#121212] leading-[29px]">
                         {item.title}
                       </h3>

@@ -266,7 +266,7 @@ export default function Contactform() {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full h-full px-[20px] py-[12px] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg text-[#FFFFFF] rounded-[10px] text-[18px] font-[500] leading-[24px] transition-all flex justify-center items-center gap-[12px] "
+                          className="w-full  px-[20px] py-[12px] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg text-[#FFFFFF] rounded-[10px] text-[18px] font-[500] leading-[24px] transition-all flex justify-center items-center gap-[12px] "
                         >
                           Send message
                           {isSubmitting && (

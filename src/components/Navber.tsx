@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link to="/" className="text-pink-500 font-medium">
             Home
           </Link>
-          <Link to="/who-we-are" className="text-gray-700 hover:text-pink-500">
+          <Link to="/home-page" className="text-gray-700 hover:text-pink-500">
             Who We Are
           </Link>
           <div className="relative group">
@@ -49,16 +49,19 @@ export default function Navbar() {
               </Link>
             </div>
           </div>
-          <Link to="/our-work" className="text-gray-700 hover:text-pink-500">
+          <Link to="/work" className="text-gray-700 hover:text-pink-500">
             Our Work
           </Link>
-          <Link to="/about" className="text-gray-700 hover:text-pink-500">
+          <Link to="/about-us" className="text-gray-700 hover:text-pink-500">
             About Us
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-pink-500">
+          <Link to="/contact-us" className="text-gray-700 hover:text-pink-500">
             Contact Us
           </Link>
-          <Link to="/portfolio" className="text-gray-700 hover:text-pink-500">
+          <Link
+            to="/portfolio-video"
+            className="text-gray-700 hover:text-pink-500"
+          >
             Portfolio Video
           </Link>
         </div>
@@ -66,7 +69,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <div className="flex items-center gap-[40px] ">
           <Link
-            to="/book"
+            to="/contact-us"
             className="px-6 py-2 rounded-full text-white font-medium bg-gradient-to-r from-pink-500 to-blue-500 shadow-md"
           >
             Book Now

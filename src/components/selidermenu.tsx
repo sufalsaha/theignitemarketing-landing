@@ -72,10 +72,12 @@ export function SheetSideww() {
 
                 <SidebarMenuItem>
                   <Link
-                    to={"/about-us"}
+                    to={"https://theignitemarketing.com/about-us"}
                     className={clsx(" text-[16px] font-[500] leading-[24px]", {
-                      "text-[#555555]": pathname != "/about-us",
-                      " text-[#1DBF73]": pathname == "/about-us",
+                      "text-[#555555]":
+                        pathname != "https://theignitemarketing.com/about-us",
+                      " text-[#1DBF73]":
+                        pathname == "https://theignitemarketing.com/about-us",
                     })}
                   >
                     <SidebarMenuButton className="hover:text-[#1DBF73]">
@@ -86,10 +88,12 @@ export function SheetSideww() {
 
                 <SidebarMenuItem>
                   <Link
-                    to={"/contact-us"}
+                    to={"https://theignitemarketing.com/contact-us"}
                     className={clsx(" text-[16px] font-[500] leading-[24px]", {
-                      "text-[#555555]": pathname != "/contact-us",
-                      " text-[#1DBF73]": pathname == "/contact-us",
+                      "text-[#555555]":
+                        pathname != "https://theignitemarketing.com/contact-us",
+                      " text-[#1DBF73]":
+                        pathname == "https://theignitemarketing.com/contact-us",
                     })}
                   >
                     <SidebarMenuButton className="hover:text-[#1DBF73]">
@@ -100,7 +104,6 @@ export function SheetSideww() {
               </div>
             </SidebarMenu>
           </SidebarProvider>
-          hello
         </SheetContent>
       </Sheet>
     </div>
