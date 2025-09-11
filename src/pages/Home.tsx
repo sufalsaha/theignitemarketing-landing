@@ -5,7 +5,6 @@ import Understand from "@/components/understand";
 import HappyClient from "@/components/Happyclient";
 import Questions from "@/components/questions";
 import Contactform from "@/components/contactform";
-
 import Webflow from "../assets/allimg/img.png";
 import calandericon from "../assets/allimg/Trailing Icon.svg";
 import clockicon from "../assets/allimg/Trailing Icon (1).svg";
@@ -26,12 +25,11 @@ import container2 from "../assets/allimg/image 841.png";
 import GoogleMap from "@/components/Googlemap";
 import LogoGrid from "@/components/MainSection";
 import SuccessCard from "@/components/SuccessCard";
-// import SuccessCard from "@/components/SuccessCard";
 
 export default function Home() {
   return (
     <>
-      {/* <HeroGsap /> */}
+      <StackingCards />
       <HeroSection />
 
       <section className="flex justify-center bg-[#fff]">
@@ -132,8 +130,6 @@ export default function Home() {
       <StackingCards />
 
       <SuccessCard />
-
-      {/* <MainSection /> */}
 
       <LogoGrid />
 
@@ -262,12 +258,16 @@ export default function Home() {
                 scale your business faster.
               </p>
               <div className="flex flex-wrap justify-center gap-[12px] mt-[40px]">
-                <button className="flex justify-center items-center gap-[6px] px-[48px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[24px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
-                  Get Started
-                </button>
-                <button className="flex justify-center items-center gap-[6px] px-[30px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[30px] text-[#5F6572] bg-[#fff] shadow-lg hover:scale-105 transition border border-gray-200">
-                  Schedule a Call
-                </button>
+                <a href="https://theignitemarketing.com/contact-us/">
+                  <button className="flex justify-center items-center gap-[6px] px-[48px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[24px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
+                    Get Started
+                  </button>
+                </a>
+                <a href="https://wa.me/923373244500" target="_blank">
+                  <button className="flex justify-center items-center gap-[6px] px-[30px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[30px] text-[#5F6572] bg-[#fff] shadow-lg hover:scale-105 transition border border-gray-200">
+                    Schedule a Call
+                  </button>
+                </a>
               </div>
             </div>
           </div>

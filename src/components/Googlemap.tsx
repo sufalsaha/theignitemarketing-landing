@@ -77,11 +77,11 @@ export default function GoogleMap() {
                   ></iframe>
                   <div className=" w-full p-[24px] bg-[#fff]  flex flex-col gap-[13px] ">
                     <h3 className="text-[24px] font-medium text-[#121212]  ">
-                      Islamabad Office
+                      Dubai Office
                     </h3>
                     <p className="text-[18px] font-normal text-[#5F6572] leading-[28px]   ">
-                      11, Green Trust Tower, Office No 1 Floor, F 6/1 Blue Area,
-                      Islamabad, 44000, Pakistan
+                      GAL Business Center - Office no 50 1st Floor - Dubai
+                      Production City - Dubai - United Arab Emirates
                     </p>
                     <div className="flex gap-[8px] items-center ">
                       <p className="text-[16px] font-semibold text-[#2E3138] leading-[24px] ">
@@ -115,7 +115,7 @@ export default function GoogleMap() {
                         />
                       </div>
                       <p className="ml-[4px] text-[16px] font-medium text-[#3C87EB] leading-[24px] ">
-                        (11 reviews)
+                        (9 reviews)
                       </p>
                     </div>
                   </div>

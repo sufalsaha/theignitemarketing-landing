@@ -2,10 +2,10 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import discoveryImg from "../assets/allimg/Group 77.svg";
-import strategyImg from "../assets/allimg/Group 77.svg";
-import executionImg from "../assets/allimg/Group 77.svg";
-import optimizationImg from "../assets/allimg/Group 77.svg";
-import reportingImg from "../assets/allimg/Group 77.svg";
+import strategyImg from "../assets/allimg/image 830 (1).png";
+import executionImg from "../assets/allimg/image 852 (1).png";
+import optimizationImg from "../assets/allimg/image 853 (1).png";
+import reportingImg from "../assets/allimg/image 854 (1).png";
 import StepCard from "./StepCard";
 import OurprOcess from "./ourprocess";
 
@@ -130,7 +130,10 @@ export const StackingCards: React.FC = () => {
       {/* Main Content */}
       <div className="lg:flex max-w-7xl mx-auto px-4 hidden">
         {/* Left Navigation */}
-        <div className="w-80 flex-shrink-0 sticky top-20 h-fit">
+        <div
+          className="w-80 flex-shrink-0 sticky top-20 h-fit"
+          style={{ position: "sticky" }}
+        >
           <nav className="space-y-2">
             {processSteps.map((step) => (
               <button
