@@ -29,7 +29,6 @@ import SuccessCard from "@/components/SuccessCard";
 export default function Home() {
   return (
     <>
-      <StackingCards />
       <HeroSection />
 
       <section className="flex justify-center bg-[#fff]">

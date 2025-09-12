@@ -37,8 +37,6 @@ const formSchema = z.object({
     .min(1, { message: "phone number is required" })
     .max(20, { message: "Name must be less than 20 characters" }),
 
-  subject: z.string().trim().min(1, { message: "Subject is required" }),
-
   message: z.string().trim().min(1, { message: "Message is required" }),
 });
 
@@ -54,6 +52,7 @@ const creditOptions = [
 export default function Contactform() {
   const [error, setError] = useState<string | undefined>();
   const [success, setSuccess] = useState<string | undefined>();
+  const [subjet, setSubjet] = useState<string | undefined>("Digital Marketing");
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -61,30 +60,49 @@ export default function Contactform() {
     defaultValues: {
       yourName: "",
       email: "",
-      subject: "",
       phone: "",
       message: "",
     },
   });
 
-  const handlePackageClick = (index: number) => {
+  const handlePackageClick = (index: number, subjet: string) => {
     setSelectedIndex(index);
+    setSubjet(subjet);
+    // console.log(subjet);
   };
-
-  console.log(creditOptions[selectedIndex].subjet);
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setError(undefined);
     setSuccess(undefined);
-    console.log(values);
+    // console.log(values);
+    // console.log(subjet);
 
-    // const res = await await addContact(values);
-    // if (res.errorMessage) {
-    //   setError(res.errorMessage);
-    // } else if (res.successMessage) {
-    //   setSuccess(res.successMessage);
-    //   form.reset();
-    // }
+    const formData = {
+      your_name: values.yourName,
+      your_email: values.email,
+      your_phone: values.phone,
+      your_subject: subjet,
+      your_message: values.message,
+    };
+
+    const res = await fetch(
+      "https://theignitemarketing.com/wp-json/reactcf7/v1/submit",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      }
+    );
+
+    const data = await res.json();
+    // console.log(data.message);
+
+    if (data.success === false) {
+      setError(data.message);
+    } else if (data.success === true) {
+      setSuccess(data.message);
+      form.reset();
+    }
   }
 
   const isSubmitting = form.formState.isSubmitting;
@@ -160,7 +178,7 @@ export default function Contactform() {
                               <FormLabel className="text-[#5F6572] text-[14px] font-[500] leading-[16px]">
                                 Full name*
                               </FormLabel>
-                              <FormControl className="text-[#B5B5B5] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
+                              <FormControl className="text-[#000] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
                                 <Input
                                   placeholder="Full name"
                                   {...field}
@@ -180,7 +198,7 @@ export default function Contactform() {
                               <FormLabel className="text-[#5F6572] text-[14px] font-[500] leading-[16px]">
                                 Email*
                               </FormLabel>
-                              <FormControl className="text-[#B5B5B5] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
+                              <FormControl className="text-[#000] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
                                 <Input
                                   type="email"
                                   placeholder="Email address"
@@ -200,7 +218,7 @@ export default function Contactform() {
                               <FormLabel className="text-[#5F6572] text-[14px] font-[500] leading-[16px]">
                                 Phone*
                               </FormLabel>
-                              <FormControl className="text-[#B5B5B5] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
+                              <FormControl className="text-[#000] text-[16px] font-[400] leading-[24px] p-[12px] border-[#D1D5DB] rounded-[6px] ">
                                 <Input
                                   placeholder="Phone number"
                                   {...field}
@@ -238,7 +256,10 @@ export default function Contactform() {
                             {creditOptions.map((credits, i) => (
                               <button
                                 key={i}
-                                onClick={() => handlePackageClick(i)}
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  handlePackageClick(i, credits.subjet);
+                                }}
                                 className={`px-[16px] py-[10px] border border-[#DDDDDD]  rounded-[6px] cursor-pointer
                                ${
                                  selectedIndex === i
@@ -266,7 +287,7 @@ export default function Contactform() {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full  px-[20px] py-[12px] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg text-[#FFFFFF] rounded-[10px] text-[18px] font-[500] leading-[24px] transition-all flex justify-center items-center gap-[12px] "
+                          className="w-full  px-[20px] py-[12px] cursor-pointer bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg text-[#FFFFFF] rounded-[10px] text-[18px] font-[500] leading-[24px] transition-all flex justify-center items-center gap-[12px] "
                         >
                           Send message
                           {isSubmitting && (

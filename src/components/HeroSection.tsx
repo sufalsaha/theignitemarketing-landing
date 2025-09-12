@@ -39,10 +39,11 @@ export default function HeroSection() {
         // markers: true,
         endTrigger: endTriggerRef.current,
         end: "bottom",
-        onToggle: (self) => {
-          console.log("toggled, isActive:", self.isActive);
-        },
+        // onToggle: (self) => {
+        //   console.log("toggled, isActive:", self.isActive);
+        // },
         onUpdate: (self) => {
+          // console.log("on update called...");
           if (upboxRef.current) {
             const opacity =
               self.progress > 0.5 ? 0 : ((0.5 - self.progress) * 2).toFixed(1);
@@ -108,7 +109,7 @@ export default function HeroSection() {
     }
   }, []);
 
-  console.log({ "pppppp opacity": opacity });
+  // console.log({ "pppppp opacity": opacity });
   return (
     <section className="flex justify-center bg-[#F8E7F1]">
       <div className="max-w-[1440px] w-full ">
@@ -157,7 +158,7 @@ export default function HeroSection() {
                       <div
                         ref={boxRef}
                         className={clsx(
-                          " flex flex-col justify-center items-center  relative   ",
+                          " flex flex-col justify-center items-center opacity-0     ",
                           {
                             // "opacity-0 z-0": !(opacity < 0.1),
                             // "opacity-100 z-10": opacity < 0.1,

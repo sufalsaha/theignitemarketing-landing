@@ -62,14 +62,14 @@ export const StackingCards: React.FC = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(
-          "Intersection entries:",
-          entries.map((e) => ({
-            id: e.target.getAttribute("data-card-id"),
-            isIntersecting: e.isIntersecting,
-            ratio: e.intersectionRatio,
-          }))
-        );
+        // console.log(
+        //   "Intersection entries:",
+        //   entries.map((e) => ({
+        //     id: e.target.getAttribute("data-card-id"),
+        //     isIntersecting: e.isIntersecting,
+        //     ratio: e.intersectionRatio,
+        //   }))
+        // );
 
         // Find all intersecting entries
         const intersectingEntries = entries.filter(
@@ -85,7 +85,7 @@ export const StackingCards: React.FC = () => {
           const cardId = parseInt(
             mostVisible.target.getAttribute("data-card-id") || "1"
           );
-          console.log("Setting active step to:", cardId);
+          // console.log("Setting active step to:", cardId);
           setActiveStep(cardId);
         }
       },
