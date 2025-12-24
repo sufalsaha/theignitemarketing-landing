@@ -20,7 +20,7 @@ export default function LogoGrid() {
     <>
       <section className="flex justify-center bg-[#fff]">
         <div className="max-w-[1440px] w-full ">
-          <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
+          <div className="px-[10px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
             <div className=" w-full flex justify-center items-center ">
               <h2 className="max-w-[684px] text-[32px] leading-[46px] xl:text-[48px] xl:leading-[64px] font-semibold text-[#121212]  md:text-center ">
                 We Speak Fluent <br /> Automation & Performance
@@ -29,7 +29,7 @@ export default function LogoGrid() {
             <div className="relative w-full xl:h-[561px] flex items-center justify-center mt-[32px] xl:mt-[60px] ">
               <div className="absolute inset-0 bg-gradient-to-t from-[#C668AA] to-[#B170B000] opacity-20 blur-3xl"></div>
 
-              <div className="flex justify-center px-[20px] xl:px-[35px] xl:pb-[64px] pt-[10px] ">
+              <div className="flex justify-center  xl:px-[35px] xl:pb-[64px] pt-[10px] ">
                 <div className="flex items-center gap-[1.42px] md:gap-[3px] xl:gap-[6px] relative  ">
                   <div className="flex flex-col gap-[1.42px] md:gap-[3px] xl:gap-[6px] ">
                     <IconCard

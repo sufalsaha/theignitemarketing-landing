@@ -2,12 +2,12 @@ import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
-import GoogleMetaImg from "../assets/allimg/Rectangle 39844 (1).png";
-import ConversionImg from "../assets/allimg/Rectangle 39844 (3).png";
-import ContentImg from "../assets/allimg/Rectangle 39844 (5).png";
-import SeoImg from "../assets/allimg/Rectangle 39844 (7).png";
+import GoogleMetaImg from "../assets/allimg/Rectangle 39844 (1).jpg";
+import ConversionImg from "../assets/allimg/Rectangle 39844 (3).jpg";
+import ContentImg from "../assets/allimg/Rectangle 39844 (5).jpg";
+import SeoImg from "../assets/allimg/Rectangle 39844 (7).jpg";
 
 import type { Swiper as SwiperType } from "swiper";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -107,6 +107,7 @@ export default function Selaider() {
               pagination={{ clickable: true }}
               centeredSlides={false}
               slidesOffsetBefore={120}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
               breakpoints={{
                 320: {
@@ -135,15 +136,15 @@ export default function Selaider() {
                   slidesOffsetBefore: 24,
                 },
               }}
-              modules={[Pagination]}
-              className="mySwiper max-h-[520px]"
+              modules={[Pagination, Autoplay]}
+              className="mySwiper max-h-[540px]"
             >
               {selider.map((item, i) => (
                 <SwiperSlide
                   key={i}
-                  className="max-h-[470px] !h-auto flex mb-[60px]"
+                  className="max-h-[470px] !h-auto flex mb-[60px] mt-[20px]  "
                 >
-                  <div className="w-full max-w-[375px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full">
+                  <div className="w-full max-w-[375px] bg-white shadow-lg rounded-[12px]  flex flex-col overflow-hidden h-full transition duration-400 ease-in-out hover:scale-105">
                     <img
                       src={item.img}
                       alt={item.title}

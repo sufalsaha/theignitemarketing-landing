@@ -1,10 +1,10 @@
 import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import discoveryImg from "../assets/allimg/Group 77.svg";
-import strategyImg from "../assets/allimg/Group 77.svg";
-import executionImg from "../assets/allimg/Group 77.svg";
-import optimizationImg from "../assets/allimg/Group 77.svg";
-import reportingImg from "../assets/allimg/Group 77.svg";
+import strategyImg from "../assets/allimg/image 830 (1).png";
+import executionImg from "../assets/allimg/image 852 (1).png";
+import optimizationImg from "../assets/allimg/image 853 (1).png";
+import reportingImg from "../assets/allimg/image 854 (1).png";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -92,7 +92,7 @@ export default function OurprOcess() {
                     <img
                       src={e.image}
                       alt="Step illustration"
-                      className="max-w-[250px] "
+                      className="max-w-[250px] max-h-[190px] "
                     />
                   </div>
                 </div>{" "}

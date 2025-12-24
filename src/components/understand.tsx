@@ -90,7 +90,7 @@ export default function Understand() {
               </div>
               {/* */}
               {/* */}
-              <div className="max-w-[480px] max-h-[600px] h-full hidden lg:block  ">
+              <div className="min-w-[480px] max-h-[600px] h-full hidden lg:block  ">
                 <img src={ClickUp} alt="ClickUp" />
               </div>
             </div>

@@ -140,13 +140,20 @@ export default function HeroSection() {
                         </h1>
 
                         <div className=" flex flex-col md:flex-row flex-wrap justify-center gap-4 mt-[48px] mb-[150px] ">
-                          <a href="https://theignitemarketing.com/contact-us/">
+                          <a
+                            href="https://theignitemarketing.com/contact-us/"
+                            style={{ textDecoration: "none" }}
+                          >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[20px] py-[16px] rounded-[8px] font-medium text-[18px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
                               <img src={chat} alt="chat" />
                               Free Strategy Call
                             </button>
                           </a>
-                          <a href="https://wa.me/923373244500" target="_blank">
+                          <a
+                            href="https://wa.me/923373244500"
+                            target="_blank"
+                            style={{ textDecoration: "none" }}
+                          >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[20px] py-[16px] rounded-[8px] font-medium text-[18px] text-[#5F6572] bg-white shadow-lg hover:scale-105 transition border border-gray-200">
                               <img src={whatappIcon} alt="image" />
                               WhatsApp
@@ -180,13 +187,20 @@ export default function HeroSection() {
                           ref={boxbutton}
                           className="flex  flex-wrap justify-center gap-4 mt-[48px] xl:mb-[150px] "
                         >
-                          <a href="https://theignitemarketing.com/contact-us/">
+                          <a
+                            href="https://theignitemarketing.com/contact-us/"
+                            style={{ textDecoration: "none" }}
+                          >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[10px] py-[6px] md:px-[20px] md:py-[16px] rounded-[8px] font-medium text-[10px] leading-[7.67px] md:text-[18px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
                               <img src={chat} alt="chat" />
                               Free Strategy Call
                             </button>
                           </a>
-                          <a href="https://wa.me/923373244500" target="_blank">
+                          <a
+                            href="https://wa.me/923373244500"
+                            target="_blank"
+                            style={{ textDecoration: "none" }}
+                          >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[10px] py-[6px] md:px-[20px] md:py-[16px] rounded-[8px] font-medium text-[10px] leading-[7.67px] md:text-[18px] text-[#5F6572] bg-white shadow-lg hover:scale-105 transition border border-gray-200">
                               <img src={whatappIcon} alt="image" className="" />
                               WhatsApp

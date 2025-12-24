@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { StackingCards } from "@/components/WorkingProcess";
 import HeroSection from "../components/HeroSection";
 import Selaider from "../components/Selaider";
@@ -5,11 +6,11 @@ import Understand from "@/components/understand";
 import HappyClient from "@/components/Happyclient";
 import Questions from "@/components/questions";
 import Contactform from "@/components/contactform";
-import Webflow from "../assets/allimg/img.png";
+import Webflow from "../assets/allimg/img.jpg";
 import calandericon from "../assets/allimg/Trailing Icon.svg";
 import clockicon from "../assets/allimg/Trailing Icon (1).svg";
-import Proven from "../assets/allimg/img (1).png";
-import Transformative from "../assets/allimg/img (2).png";
+import Proven from "../assets/allimg/img (1).jpg";
+import Transformative from "../assets/allimg/img (2).jpg";
 import img1 from "../assets/allimg/65e1f5506f78e1e528ce1414_raiting.svg.png";
 import ster from "../assets/allimg/Vector.svg";
 import bgimg1 from "../assets/allimg/Background+Border (1).png";
@@ -19,12 +20,13 @@ import bgimg4 from "../assets/allimg/Background+Ber (1).png";
 import bgimg5 from "../assets/allimg/Backgroundr (2).png";
 import bgimg6 from "../assets/allimg/Background+Border (3).png";
 import bgimg7 from "../assets/allimg/Background+Border (4).png";
-import container from "../assets/allimg/Container.png";
+import container from "../assets/allimg/Container.jpg";
 import container1 from "../assets/allimg/Frame 1618873223.png";
 import container2 from "../assets/allimg/image 841.png";
 import GoogleMap from "@/components/Googlemap";
 import LogoGrid from "@/components/MainSection";
 import SuccessCard from "@/components/SuccessCard";
+import CallToActionCard from "@/components/callToActionCard";
 
 export default function Home() {
   return (
@@ -75,7 +77,11 @@ export default function Home() {
 
             <div className="flex flex-col items-center justify-center lg:flex-row gap-[24px] mt-[24px] ">
               <div className="max-w-[446px]">
-                <img src={container} alt="Container" className="w-full " />
+                <img
+                  src={container}
+                  alt="Container"
+                  className="w-full rounded-[14px] "
+                />
               </div>
 
               <div className="flex flex-col justify-center gap-[24px] w-full ">
@@ -90,7 +96,7 @@ export default function Home() {
                       conversions, and business growth.
                     </p>
                   </div>
-                  <div className="max-w-[270px] max-h-[244px] ">
+                  <div className="max-w-[270px] w-full  lg:min-w-[200px] ">
                     <img
                       src={container1}
                       alt="1618873223"
@@ -110,11 +116,11 @@ export default function Home() {
                       conversions, and business growth.
                     </p>
                   </div>
-                  <div>
+                  <div className="min-w-[224px] lg:min-w-[180px]">
                     <img
                       src={container2}
                       alt="container2"
-                      className="w-[224px] h-[195px] "
+                      className="w-[224px]  "
                     />
                   </div>
                 </div>
@@ -133,6 +139,10 @@ export default function Home() {
       <LogoGrid />
 
       <Understand />
+
+      <CallToActionCard />
+
+      {/* <BookACallFrom /> */}
 
       <Contactform />
 
@@ -155,7 +165,7 @@ export default function Home() {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-[32px] mt-[80px] ">
-                <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full">
+                <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full  transition duration-400 ease-in-out hover:scale-105">
                   <img
                     src={Webflow}
                     alt="Webflow"
@@ -182,7 +192,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full">
+                <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full  transition duration-400 ease-in-out hover:scale-105">
                   <img
                     src={Proven}
                     alt="Webflow"
@@ -209,7 +219,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full">
+                <div className="w-full max-w-[384px] bg-white shadow-lg rounded-[12px] flex flex-col overflow-hidden h-full  transition duration-400 ease-in-out hover:scale-105">
                   <img
                     src={Transformative}
                     alt="Webflow"
@@ -257,13 +267,20 @@ export default function Home() {
                 scale your business faster.
               </p>
               <div className="flex flex-wrap justify-center gap-[12px] mt-[40px]">
-                <a href="https://theignitemarketing.com/contact-us/">
-                  <button className="flex justify-center items-center gap-[6px] px-[48px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[24px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
+                <a
+                  href="https://theignitemarketing.com/contact-us/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button className="flex justify-center items-center gap-[6px] px-[48px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[24px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition  ">
                     Get Started
                   </button>
                 </a>
-                <a href="https://wa.me/923373244500" target="_blank">
-                  <button className="flex justify-center items-center gap-[6px] px-[30px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[30px] text-[#5F6572] bg-[#fff] shadow-lg hover:scale-105 transition border border-gray-200">
+                <a
+                  href="https://wa.me/923373244500"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button className="flex justify-center items-center gap-[6px] px-[30px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[30px] text-[#5F6572] bg-[#fff] shadow-lg hover:scale-105 transition border border-gray-200 ">
                     Schedule a Call
                   </button>
                 </a>

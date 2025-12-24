@@ -69,7 +69,7 @@ export default function GoogleMap() {
 
                 <div className=" bg-[#fff] border border-[#E8E8E8] rounded-[8px] p-[12px]">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4448.046841314211!2d55.18052237605085!3d25.03676823817886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6da7e9fc9149%3A0xddf5aae046fe3037!2sGAL%20Business%20Center%20-%20Serviced%20Offices%20%26%20Coworking%20Spaces%20in%20Dubai!5e1!3m2!1sen!2sbd!4v1756718687630!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4447.596832595798!2d55.21206357605104!3d25.049175437679022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d13bf000c8f%3A0xe68f8f7b30b7e06!2sThe%20Ignite%20Marketing%20llc!5e1!3m2!1sen!2sbd!4v1757755009007!5m2!1sen!2sbd"
                     width="100%"
                     height="450"
                     loading="lazy"
@@ -80,8 +80,8 @@ export default function GoogleMap() {
                       Dubai Office
                     </h3>
                     <p className="text-[18px] font-normal text-[#5F6572] leading-[28px]   ">
-                      GAL Business Center - Office no 50 1st Floor - Dubai
-                      Production City - Dubai - United Arab Emirates
+                      Prime Business Centre - 404-B Block B - Jumeirah Village -
+                      Jumeirah Village Circle - Dubai - United Arab Emirates
                     </p>
                     <div className="flex gap-[8px] items-center ">
                       <p className="text-[16px] font-semibold text-[#2E3138] leading-[24px] ">
