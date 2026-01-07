@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { StackingCards } from "@/components/WorkingProcess";
 import HeroSection from "../components/HeroSection";
 import Selaider from "../components/Selaider";
@@ -27,6 +26,7 @@ import GoogleMap from "@/components/Googlemap";
 import LogoGrid from "@/components/MainSection";
 import SuccessCard from "@/components/SuccessCard";
 import CallToActionCard from "@/components/callToActionCard";
+import AboutUs from "@/components/aboutUs";
 
 export default function Home() {
   return (
@@ -129,6 +129,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <AboutUs />
 
       <Selaider />
 
@@ -259,12 +261,12 @@ export default function Home() {
           <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
             <div className="flex flex-col justify-center items-center gap-[18px] ">
               <h2 className="text-[32px] md:text-[48px] font-semibold text-[#121212] md:leading-[64px] text-center ">
-                Ready to Accelerate Your Growth
+                Ready to Ignite Your Digital Growth?
               </h2>
               <p className="max-w-[600px] text-[20px] font-normal text-[#5F6572] leading-[30px] text-center ">
-                Partner with a results-driven marketing agency that understands
-                your goals. Let’s create powerful campaigns that convert and
-                scale your business faster.
+                {
+                  "Let’s build a stronger online presence, a more powerful brand, and a marketing strategy that actually converts."
+                }
               </p>
               <div className="flex flex-wrap justify-center gap-[12px] mt-[40px]">
                 <a

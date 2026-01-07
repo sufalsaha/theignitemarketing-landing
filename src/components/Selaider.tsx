@@ -16,6 +16,7 @@ type SlideItem = {
   img: string;
   title: string;
   des: string;
+  url: string;
 };
 
 export default function Selaider() {
@@ -24,44 +25,86 @@ export default function Selaider() {
   const selider: SlideItem[] = [
     {
       img: GoogleMetaImg,
-      title: "Google & Meta Ads",
-      des: "Laser-targeted campaigns built for ROI.",
+      title: "Digital Marketing",
+      des: "Reach the right audience with full-funnel digital marketing campaigns. From social media and PPC to remarketing and funnels, our strategies increase visibility, engagement, and conversions.",
+      url: "https://theignitemarketing.com/digital-marketing-services/",
     },
     {
       img: ConversionImg,
-      title: "Conversion-Optimized Landing Pages",
-      des: "Built to convert cold traffic.",
+      title: "Market Research",
+      des: "Make smarter decisions with deep insights. We analyze your competitors, audiences, industry trends, and customer behavior to guide your digital strategy with precision.",
+      url: "https://theignitemarketing.com/market-research-services/",
     },
     {
       img: ContentImg,
-      title: "Content Creation + Social Media",
-      des: "Scroll-stopping content & calendars.",
+      title: "Creative Layouts",
+      des: "Stand out with visually compelling content. Our creative team designs modern layouts, graphics, and brand visuals that enhance your identity and capture attention.",
+      url: "https://theignitemarketing.com/layout-design-services/",
     },
     {
       img: SeoImg,
-      title: "SEO + Organic Growth",
-      des: "Technical SEO + content that ranks.",
+      title: "SEO & Backlinks",
+      des: "Boost your rankings and organic traffic with powerful SEO solutions. We provide keyword optimization, on-page SEO, link-building campaigns, and technical improvements that help your website dominate search engines.",
+      url: "https://theignitemarketing.com/seo-services/",
     },
     {
       img: GoogleMetaImg,
-      title: "Google & Meta Ads",
-      des: "Laser-targeted campaigns built for ROI.",
+      title: "Email Marketing",
+      des: "Turn prospects into loyal customers with automated, high-conversion email flows. From newsletters to drip campaigns, we create content that drives engagement and sales.",
+      url: "https://theignitemarketing.com/email-marketing-strategy/",
     },
     {
       img: ConversionImg,
-      title: "Conversion-Optimized Landing Pages",
-      des: "Built to convert cold traffic.",
-    },
-    {
-      img: ContentImg,
-      title: "Content Creation + Social Media",
-      des: "Scroll-stopping content & calendars.",
+      title: "Brand Development",
+      des: "Grow a strong and memorable brand. We craft brand strategy, visual identity, messaging, and guidelines to position your business with clarity and impact.",
+      url: "https://theignitemarketing.com/brand-developement-services/",
     },
     {
       img: SeoImg,
-      title: "SEO + Organic Growth",
-      des: "Technical SEO + content that ranks.",
+      title: "WordPress Agency",
+      des: "As a specialized WordPress agency, we design and develop fast, secure, and user-friendly websites. From custom themes to performance optimization, we ensure your website becomes one of your strongest marketing tools.",
+      url: "https://theignitemarketing.com/wordpress-agency/",
     },
+    // {
+    //   img: GoogleMetaImg,
+    //   title: "Google & Meta Ads",
+    //   des: "Laser-targeted campaigns built for ROI.",
+    // },
+    // {
+    //   img: ConversionImg,
+    //   title: "Conversion-Optimized Landing Pages",
+    //   des: "Built to convert cold traffic.",
+    // },
+    // {
+    //   img: ContentImg,
+    //   title: "Content Creation + Social Media",
+    //   des: "Scroll-stopping content & calendars.",
+    // },
+    // {
+    //   img: SeoImg,
+    //   title: "SEO + Organic Growth",
+    //   des: "Technical SEO + content that ranks.",
+    // },
+    // {
+    //   img: GoogleMetaImg,
+    //   title: "Google & Meta Ads",
+    //   des: "Laser-targeted campaigns built for ROI.",
+    // },
+    // {
+    //   img: ConversionImg,
+    //   title: "Conversion-Optimized Landing Pages",
+    //   des: "Built to convert cold traffic.",
+    // },
+    // {
+    //   img: ContentImg,
+    //   title: "Content Creation + Social Media",
+    //   des: "Scroll-stopping content & calendars.",
+    // },
+    // {
+    //   img: SeoImg,
+    //   title: "SEO + Organic Growth",
+    //   des: "Technical SEO + content that ranks.",
+    // },
   ];
 
   return (
@@ -137,29 +180,31 @@ export default function Selaider() {
                 },
               }}
               modules={[Pagination, Autoplay]}
-              className="mySwiper max-h-[540px]"
+              className="mySwiper max-h-[640px]"
             >
               {selider.map((item, i) => (
                 <SwiperSlide
                   key={i}
-                  className="max-h-[470px] !h-auto flex mb-[60px] mt-[20px]  "
+                  className="max-h-[570px] !h-auto flex mb-[60px] mt-[20px]  "
                 >
-                  <div className="w-full max-w-[375px] bg-white shadow-lg rounded-[12px]  flex flex-col overflow-hidden h-full transition duration-400 ease-in-out hover:scale-105">
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="w-full h-auto object-cover"
-                    />
-                    {/* flex-grow */}
-                    <div className="flex flex-col gap-3 p-6 ">
-                      <h3 className="text-[20px] font-semibold text-[#121212] leading-[29px]">
-                        {item.title}
-                      </h3>
-                      <p className="text-[16px] text-[#4B5563] leading-[24px]">
-                        {item.des}
-                      </p>
+                  <a href={item.url}>
+                    <div className="w-full max-w-[375px] bg-white shadow-lg rounded-[12px]  flex flex-col overflow-hidden h-full transition duration-400 ease-in-out hover:scale-105">
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="w-full h-auto object-cover"
+                      />
+                      {/* flex-grow */}
+                      <div className="flex flex-col gap-3 p-6 ">
+                        <h3 className="text-[20px] font-semibold text-[#121212] leading-[29px]">
+                          {item.title}
+                        </h3>
+                        <p className="text-[16px] text-[#4B5563] leading-[24px]">
+                          {item.des}
+                        </p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </SwiperSlide>
               ))}
             </Swiper>

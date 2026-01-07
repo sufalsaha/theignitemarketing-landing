@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+// import chat from "../assets/allimg/chat-smile-2-fill.svg";
 
 export default function Questions() {
   return (
@@ -24,64 +25,75 @@ export default function Questions() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
                     <div className="text-[20px] font-medium text-[#111827] leading-[28px]  ">
-                      Do you guarantee leads?
+                      What digital marketing services do you offer?
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="text-[16px] font-normal text-[#5F6572] leading-[24px]  ">
-                      Digital marketing refers to advertising delivered through
-                      digital channels such as search engines, websites, social
-                      media, email, and mobile apps. It helps businesses reach
-                      potential customers online.
+                      {`We provide full-stack digital marketing solutions
+                      including SEO, paid advertising (Google & Meta), social
+                      media management, content marketing, email marketing,
+                      brand development, automation, analytics and custom web
+                      development (e.g., WordPress) tailored for your business
+                      goals.`}
                     </div>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>
                     <div className="text-[20px] font-medium text-[#111827] leading-[28px]  ">
-                      How soon can you start?
+                      Do you work with all industries?
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="text-[16px] font-normal text-[#5F6572] leading-[24px]  ">
-                      Digital marketing refers to advertising delivered through
-                      digital channels such as search engines, websites, social
-                      media, email, and mobile apps. It helps businesses reach
-                      potential customers online.
+                      Yes — we have experience with multiple sectors including
+                      real estate, e-commerce, healthcare and more. We research
+                      your market and competitors before crafting strategies.
                     </div>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>
                     <div className="text-[20px] font-medium text-[#111827] leading-[28px]  ">
-                      What makes you different?
+                      Can you handle website design and development?
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="text-[16px] font-normal text-[#5F6572] leading-[24px]  ">
-                      Digital marketing refers to advertising delivered through
-                      digital channels such as search engines, websites, social
-                      media, email, and mobile apps. It helps businesses reach
-                      potential customers online.
+                      Absolutely. We also deliver custom WordPress solutions,
+                      WooCommerce stores, theme/plugin development and ongoing
+                      maintenance as part of your digital strategy.
                     </div>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger>
                     <div className="text-[20px] font-medium text-[#111827] leading-[28px]  ">
-                      Do you guarantee leads?
+                      How do you start a project?
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
                     <div className="text-[16px] font-normal text-[#5F6572] leading-[24px]  ">
-                      Digital marketing refers to advertising delivered through
-                      digital channels such as search engines, websites, social
-                      media, email, and mobile apps. It helps businesses reach
-                      potential customers online.
+                      First, we conduct a discovery call to understand your
+                      goals. Then we perform market research and competitor
+                      analysis to build a tailored strategy and campaign brief.
                     </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+
+              <div className="mt-3">
+                <a
+                  href="https://theignitemarketing.com/faq/"
+                  style={{ textDecoration: "none" }}
+                >
+                  <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[20px] py-[16px] rounded-[8px] font-medium text-[18px] text-[#000]  shadow-lg hover:scale-105 transition border border-gray-200 ">
+                    {/* <img src={chat} alt="chat" /> */}
+                    {`Read more >`}
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
