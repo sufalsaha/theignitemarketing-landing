@@ -19,37 +19,34 @@ interface ProcessStep {
 const processSteps: ProcessStep[] = [
   {
     id: 1,
-    title: "Discovery & Audit",
+    title: "Strategic Audit & Blueprinting",
     description:
-      "In the discovery and audit phase, we analyze your goals, funnel, and competitors to shape an effective marketing website strategy.",
+      "We don't guess; we diagnose. We perform a forensic audit of your current funnel, spy on competitor traffic sources, and architect a custom roadmap specifically tied to your revenue targets.",
     image: discoveryImg,
   },
   {
     id: 2,
-    title: "Strategy & Planning",
-    description:
-      "KPIs, targeting, and full-funnel mapping guide strategic planning by aligning goals, identifying audiences, and optimizing each customer journey stage.",
+    title: "Ecosystem Engineering",
+    description: `Before spending a single dirham on ads, we build the infrastructure. We configure full-funnel tracking (GA4/CRM), optimize your offer, and engineer the "conversion layer" to ensure every click has the highest chance of converting.`,
     image: strategyImg,
   },
   {
     id: 3,
-    title: "Execution",
-    description:
-      "Our expert team brings your strategy to life through seamless implementation across all digital touchpoints and marketing channels.",
+    title: "Precision Launch",
+    description: `We deploy your campaigns across high-impact channels (Google, Meta, SEO) with laser-focused targeting. We ignore "brand awareness" fluff and target only the audiences exhibiting high purchase intent.`,
     image: executionImg,
   },
   {
     id: 4,
-    title: "Optimization",
+    title: "Algorithmic Optimization",
     description:
-      "Continuous monitoring and data-driven optimization ensure peak performance and maximum ROI from your marketing investments.",
+      "We ruthlessly cut wasted ad spend. Our team monitors performance daily, iterating on ad creatives and bid strategies to lower your Cost Per Acquisition (CPA) while increasing lead quality.",
     image: optimizationImg,
   },
   {
     id: 5,
-    title: "Reporting & Scaling",
-    description:
-      "Comprehensive reporting and strategic scaling initiatives drive sustainable growth and long-term business success.",
+    title: "Scaling & Revenue Intelligence",
+    description: `We scale what works. You get transparent, bottom-line reporting that shows exactly how much revenue was generated—not just vanity metrics like "clicks" or "impressions."`,
     image: reportingImg,
   },
 ];

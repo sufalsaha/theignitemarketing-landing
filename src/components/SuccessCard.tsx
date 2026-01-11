@@ -10,10 +10,14 @@ export default function SuccessCard() {
       <section className="flex justify-center bg-[#fff]">
         <div className=" w-full ">
           <div className="py-[40px] lg:py-[112px] ">
-            <div className="mb-[60px] px-[20px] md:px-[50px]  xl:px-[112px] ">
-              <h2 className="text-[32px] leading-[48px] md:text-[48px] md:leading-[64px]  font-semibold text-[#121212] md:text-center ">
-                We understand your industry. <br /> We’ve done it before.
+            <div className="mb-[10px] px-[20px] md:px-[50px]  xl:px-[112px] ">
+              <h2 className="text-[32px] leading-[48px] md:text-[48px] md:leading-[64px] text-center  font-semibold text-[#121212] md:text-center ">
+                Proven Results in Dubai’s <br /> Toughest Markets
               </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-center mt-4">
+                We don't believe in "one-size-fits-all." We engineer specific
+                growth engines for the industries that matter most.
+              </p>
             </div>
 
             <div className="h-[200px] md:h-[300px] xl:h-[500px] py-[20px] md:py-[50px] xl:py-[100px]">

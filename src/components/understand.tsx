@@ -16,13 +16,15 @@ export default function Understand() {
         <div className="px-[20px] md:px-[50px] lg:px-[112px] py-[112px]">
           <div>
             <div>
-              <h3 className="text-[32px] leading-[46px] md:text-[48px] md:leading-[64px] font-semibold text-[#121212] md:text-center ">
-                We understand your industry. <br className="hidden md:block" />{" "}
-                We’ve done it before.
-              </h3>
+              <h2 className="text-[32px] leading-[46px] md:text-[48px] md:leading-[64px] font-semibold text-[#121212] md:text-center ">
+                We Don't Guess. We Specialize.
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mt-2">
+                Engineered revenue systems for Dubai’s most competitive sectors.
+              </p>
             </div>
             {/* max-w-[692px] */}
-            <div className="flex flex-col xl:flex-row justify-center items-center gap-[32px] mt-[50px] ">
+            <div className="flex flex-col xl:flex-row justify-center items-center gap-[32px] mt-[40px] ">
               <div className=" w-full rounded-[12px] shadow-2xl ">
                 <Table>
                   {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
@@ -42,7 +44,7 @@ export default function Understand() {
                         Real Estate
                       </TableCell>
                       <TableCell className="text-[8.99px] leading-[14.15px] md:text-[16px] md:leading-[24px] p-[14px] md:p-[24px] font-normal text-[#4B5563] ">
-                        150+ leads/month with landing page + retargeting
+                        AED 40M+ Sales Pipeline generated via HNWI targeting.
                       </TableCell>
                     </TableRow>
                     <TableRow className=" ">
@@ -50,7 +52,9 @@ export default function Understand() {
                         Healthcare
                       </TableCell>
                       <TableCell className="text-[8.99px] leading-[14.15px] md:text-[16px] md:leading-[24px] p-[14px] md:p-[24px] font-normal text-[#4B5563] ">
-                        Google Ads for clinics — leads under AED 30
+                        {
+                          "100+ High-Ticket Patient Bookings (Derma/Dental) in 30 days."
+                        }
                       </TableCell>
                     </TableRow>
                     <TableRow className=" ">
@@ -58,7 +62,7 @@ export default function Understand() {
                         E-commerce
                       </TableCell>
                       <TableCell className="text-[8.99px] leading-[14.15px] md:text-[16px] md:leading-[24px] p-[14px] md:p-[24px] font-normal text-[#4B5563] ">
-                        4X–8X ROAS with full-funnel sales system
+                        Scaled to 8.5x ROAS while doubling monthly ad spend.
                       </TableCell>
                     </TableRow>
                     <TableRow className=" ">
@@ -66,7 +70,8 @@ export default function Understand() {
                         Education
                       </TableCell>
                       <TableCell className="text-[8.99px] leading-[14.15px] md:text-[16px] md:leading-[24px] p-[14px] md:p-[24px] font-normal text-[#4B5563] ">
-                        Lead generation for study abroad & consultants
+                        450+ Student Enrollments secured for Fall Intake at 40%
+                        lower CPA.
                       </TableCell>
                     </TableRow>
                     <TableRow className=" ">
@@ -74,7 +79,9 @@ export default function Understand() {
                         Tech/SaaS
                       </TableCell>
                       <TableCell className="text-[8.99px] leading-[14.15px] md:text-[16px] md:leading-[24px] p-[14px] md:p-[24px] font-normal text-[#4B5563]">
-                        Full performance stack + CRM setup
+                        {
+                          "B2B Lead Generation with <$25 Cost Per Qualified Demo."
+                        }
                       </TableCell>
                     </TableRow>
                     <TableRow className=" ">
@@ -82,7 +89,7 @@ export default function Understand() {
                         Luxury/Lifestyle
                       </TableCell>
                       <TableCell className="text-[8.99px] leading-[14.15px] md:text-[16px] md:leading-[24px] p-[14px] md:p-[24px] font-normal text-[#4B5563]">
-                        High-converting content + UGC reels
+                        Brand positioning that captures Top 1% spending power
                       </TableCell>
                     </TableRow>
                   </TableBody>

@@ -9,7 +9,7 @@ function App() {
       {/* <Navbar /> */}
       <Routes>
         {/* /home-custom */}
-        <Route path="/" element={<Home />} />
+        <Route path="/home-custom" element={<Home />} />
       </Routes>
       {/* <Footer /> */}
     </>

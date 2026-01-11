@@ -130,13 +130,14 @@ export default function HeroSection() {
                           }
                         )}
                       >
-                        <div className="inline-flex items-center px-4 py-1 rounded-full bg-white shadow-md text-[16px] font-400 text-[#DE5EA3] mb-[16px] ">
+                        <div className="inline-flex items-center mx-4 px-4 py-1 rounded-full bg-white shadow-md text-[16px] font-400 text-[#DE5EA3] mb-[16px] ">
                           <span className="w-2 h-2 bg-[#DE5EA3] rounded-full mr-2"></span>
-                          Welcome to TheIgniteMarketing
+                          Dubai’s Premier Performance Marketing Agency
                         </div>
 
                         <h1 className="w-full text-[32px] leading-[100%] md:text-[48px]  font-bold text-gray-900 xl:leading-[90px] xl:text-[72px] text-center">
-                          Grow Into <span className="ml-2">Market Leader</span>
+                          Your leading
+                          <span className="ml-2">digital agency</span>
                         </h1>
 
                         <div className=" flex flex-col md:flex-row flex-wrap justify-center gap-4 mt-[48px] mb-[150px] ">
@@ -146,7 +147,7 @@ export default function HeroSection() {
                           >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[20px] py-[16px] rounded-[8px] font-medium text-[18px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
                               <img src={chat} alt="chat" />
-                              Free Strategy Call
+                              Claim Free Audit
                             </button>
                           </a>
                           <a
@@ -156,7 +157,7 @@ export default function HeroSection() {
                           >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[20px] py-[16px] rounded-[8px] font-medium text-[18px] text-[#5F6572] bg-white shadow-lg hover:scale-105 transition border border-gray-200">
                               <img src={whatappIcon} alt="image" />
-                              WhatsApp
+                              WhatsApp Us
                             </button>
                           </a>
                         </div>
@@ -172,16 +173,18 @@ export default function HeroSection() {
                           }
                         )}
                       >
-                        <h1 className="max-w-[263px] md:max-w-[463px] lg:max-w-[831px] text-[32px] leading-[100%] md:text-[48px] font-bold text-[#121212] lg:text-[64px] lg:leading-[90px] text-center">
-                          Ignite Sales. Build Brands.{" "}
+                        <h1 className="max-w-[263px] md:max-w-[463px] lg:max-w-[831px] text-[30px] leading-[100%] md:text-[48px] font-bold text-[#121212] lg:text-[50px] lg:leading-[70px] text-center">
+                          Scale Revenue. Dominate Search.
                           <span className="bg-gradient-to-r from-[#EC4699] via-[#9234EA] to-[#07B9D5] bg-clip-text text-transparent">
-                            Maximize ROI.
+                            Automate Leads.
                           </span>
                         </h1>
                         <p className="max-w-[212px] md:max-w-[403px] lg:max-w-[664px] text-[6.4px] leading-[9px] md:text-[12px] md:leading-[18px] lg:text-[20px] lg:leading-[28px] font-normal text-[#5F6572] text-center mt-[14px]">
-                          Ignite Marketing helps Dubai brands grow online using
-                          paid ads, automation, content strategies, and
-                          conversion tactics with measurable results.
+                          Our digital agency builds high-converting funnels,
+                          precision ad campaigns, and GEO/AEO search systems.
+                          Stop guessing—start generating qualified leads for
+                          your Real Estate, Clinic, or Service Business with a
+                          proven ROI-driven ecosystem.
                         </p>
                         <div
                           ref={boxbutton}
@@ -193,7 +196,7 @@ export default function HeroSection() {
                           >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[10px] py-[6px] md:px-[20px] md:py-[16px] rounded-[8px] font-medium text-[10px] leading-[7.67px] md:text-[18px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition ">
                               <img src={chat} alt="chat" />
-                              Free Strategy Call
+                              Claim Free Audit
                             </button>
                           </a>
                           <a
@@ -203,7 +206,7 @@ export default function HeroSection() {
                           >
                             <button className="flex justify-center items-center gap-[6px] cursor-pointer px-[10px] py-[6px] md:px-[20px] md:py-[16px] rounded-[8px] font-medium text-[10px] leading-[7.67px] md:text-[18px] text-[#5F6572] bg-white shadow-lg hover:scale-105 transition border border-gray-200">
                               <img src={whatappIcon} alt="image" className="" />
-                              WhatsApp
+                              WhatsApp Us
                             </button>
                           </a>
                         </div>

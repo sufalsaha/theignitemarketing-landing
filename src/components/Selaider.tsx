@@ -1,16 +1,7 @@
-import { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-// import "swiper/css/pagination";
-import { Pagination, Autoplay } from "swiper/modules";
-
-import GoogleMetaImg from "../assets/allimg/Rectangle 39844 (1).jpg";
-import ConversionImg from "../assets/allimg/Rectangle 39844 (3).jpg";
-import ContentImg from "../assets/allimg/Rectangle 39844 (5).jpg";
-import SeoImg from "../assets/allimg/Rectangle 39844 (7).jpg";
-
-import type { Swiper as SwiperType } from "swiper";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import GoogleMetaImg from "../assets/allimg/Gemini_Generated_Image_pscj5vpscj5vpscj.png";
+import ConversionImg from "../assets/allimg/Gemini_Generated_Image_qcspr0qcspr0qcsp.png";
+import ContentImg from "../assets/allimg/Gemini_Generated_Image_pscj5vpscj5vpscj.png";
+import SeoImg from "../assets/allimg/Gemini_Generated_Image_qcspr0qcspr0qcsp.png";
 
 type SlideItem = {
   img: string;
@@ -20,8 +11,6 @@ type SlideItem = {
 };
 
 export default function Selaider() {
-  const swiperRef = useRef<SwiperType | null>(null);
-
   const selider: SlideItem[] = [
     {
       img: GoogleMetaImg,
@@ -65,46 +54,6 @@ export default function Selaider() {
       des: "As a specialized WordPress agency, we design and develop fast, secure, and user-friendly websites. From custom themes to performance optimization, we ensure your website becomes one of your strongest marketing tools.",
       url: "https://theignitemarketing.com/wordpress-agency/",
     },
-    // {
-    //   img: GoogleMetaImg,
-    //   title: "Google & Meta Ads",
-    //   des: "Laser-targeted campaigns built for ROI.",
-    // },
-    // {
-    //   img: ConversionImg,
-    //   title: "Conversion-Optimized Landing Pages",
-    //   des: "Built to convert cold traffic.",
-    // },
-    // {
-    //   img: ContentImg,
-    //   title: "Content Creation + Social Media",
-    //   des: "Scroll-stopping content & calendars.",
-    // },
-    // {
-    //   img: SeoImg,
-    //   title: "SEO + Organic Growth",
-    //   des: "Technical SEO + content that ranks.",
-    // },
-    // {
-    //   img: GoogleMetaImg,
-    //   title: "Google & Meta Ads",
-    //   des: "Laser-targeted campaigns built for ROI.",
-    // },
-    // {
-    //   img: ConversionImg,
-    //   title: "Conversion-Optimized Landing Pages",
-    //   des: "Built to convert cold traffic.",
-    // },
-    // {
-    //   img: ContentImg,
-    //   title: "Content Creation + Social Media",
-    //   des: "Scroll-stopping content & calendars.",
-    // },
-    // {
-    //   img: SeoImg,
-    //   title: "SEO + Organic Growth",
-    //   des: "Technical SEO + content that ranks.",
-    // },
   ];
 
   return (
@@ -112,37 +61,68 @@ export default function Selaider() {
       <div className="max-w-[1440px] w-full">
         <div className="py-[50px]">
           <div className=" px-[20px] md:px-[50px] xl:px-[112px] flex justify-between items-center">
-            <div className="flex flex-col gap-[12px] w-full  ">
-              <h2 className=" text-[32px] leading-[48px] xl:text-[48px] xl:leading-[64px] font-semibold text-[#121212] ">
-                What We Do Best
-              </h2>
-              <div className=" flex items-end justify-between gap-[20px] ">
-                <p className="text-[16px] font-normal text-[#5F6572] leading-[24px]">
-                  Expand the capabilities of the Linear system with a wide
-                  variety of integrations that keep everyone in your
-                  organization aligned and focused.
-                </p>
-                <div className="flex items-end justify-end gap-[12px] ">
-                  <button
-                    onClick={() => swiperRef.current?.slidePrev()}
-                    className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer "
-                  >
-                    <ChevronLeft />
-                  </button>
-                  <button
-                    onClick={() => swiperRef.current?.slideNext()}
-                    className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer"
-                  >
-                    <ChevronRight />
-                  </button>
+            <div>
+              <div className="flex flex-col gap-[12px] w-full  ">
+                <h2 className=" text-[32px] leading-[48px] xl:text-[48px] xl:leading-[64px] font-semibold text-[#121212] ">
+                  What We Do Best
+                </h2>
+                <div className=" flex items-end justify-between gap-[20px] ">
+                  <p className="text-[16px] font-normal text-[#5F6572] leading-[24px]">
+                    Expand the capabilities of the Linear system with a wide
+                    variety of integrations that keep everyone in your
+                    organization aligned and focused.
+                  </p>
+                  {/* <div className="flex items-end justify-end gap-[12px] ">
+                    <button
+                      onClick={() => swiperRef.current?.slidePrev()}
+                      className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer "
+                    >
+                      <ChevronLeft />
+                    </button>
+                    <button
+                      onClick={() => swiperRef.current?.slideNext()}
+                      className="h-[40px] w-[40px] bg-[#F5F5F5] rounded-full flex justify-center items-center cursor-pointer"
+                    >
+                      <ChevronRight />
+                    </button>
+                  </div> */}
+                </div>
+              </div>
+              <div className="mt-[60px] ">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+                  {selider.map((item, i) => (
+                    <div key={i} className=" !h-auto    ">
+                      <a href={item.url}>
+                        <div className="w-full max-w-[400px] bg-white shadow-lg rounded-[12px]  flex flex-col overflow-hidden h-full transition duration-400 ease-in-out hover:scale-105 border-2 border-[#F8E7F1] ">
+                          <div className="flex items-center justify-center ">
+                            <div className="w-[200px] h-[200px] overflow-hidden">
+                              <img
+                                src={item.img}
+                                alt={item.title}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                          </div>
+                          {/* flex-grow */}
+                          <div className="flex flex-col gap-3 p-6 ">
+                            <h3 className="text-[20px] font-semibold text-[#121212] leading-[29px]">
+                              {item.title}
+                            </h3>
+                            <p className="text-[16px] text-[#4B5563] leading-[24px]">
+                              {item.des}
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
           {/* Navigation Buttons */}
 
-          <div className="mt-[60px] ">
-            {/* Swiper */}
+          {/* <div className="mt-[60px] ">
             <Swiper
               onSwiper={(swiper) => (swiperRef.current = swiper)}
               slidesPerView={4}
@@ -194,7 +174,7 @@ export default function Selaider() {
                         alt={item.title}
                         className="w-full h-auto object-cover"
                       />
-                      {/* flex-grow */}
+
                       <div className="flex flex-col gap-3 p-6 ">
                         <h3 className="text-[20px] font-semibold text-[#121212] leading-[29px]">
                           {item.title}
@@ -208,7 +188,7 @@ export default function Selaider() {
                 </SwiperSlide>
               ))}
             </Swiper>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

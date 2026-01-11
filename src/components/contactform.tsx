@@ -41,12 +41,12 @@ const formSchema = z.object({
 });
 
 const creditOptions = [
-  { subjet: "Digital Marketing" },
-  { subjet: "Market Research" },
-  { subjet: "Creative Layouts" },
-  { subjet: "SEO & Backlinks" },
-  { subjet: "Email Marketing" },
-  { subjet: "Brand Development" },
+  { subjet: "Paid Ads(Google/Meta)" },
+  { subjet: "SEO & Authority" },
+  { subjet: "Funnels & Automation" },
+  { subjet: "Social Media Growth" },
+  { subjet: "Web & App Dev" },
+  { subjet: "Full Revenue Ecosystem" },
 ];
 
 export default function Contactform() {
@@ -113,26 +113,36 @@ export default function Contactform() {
           <div className="flex flex-col lg:flex-row justify-between gap-[48px] ">
             <div>
               <h3 className="text-[40px] font-semibold text-[#000000] leading-[48px] ">
-                Book A Free 30-Minute Consultation Call
+                Ready to Scale? Claim Your Free Revenue Audit.
               </h3>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto mt-3">
+                This isn’t a sales pitch. It’s a 30-minute strategic deep dive
+                where we analyze your current gaps and build a 90-day roadmap to
+                dominance.
+              </p>
               <div className="flex flex-col gap-[18px] mt-[36px] ">
-                <div className="flex gap-[12px]">
-                  <img src={ClickUp} alt="ClickUp" />
-                  <p className="text-[18px] font-normal text-[#5F6572] leading-[28px] ">
-                    Fill out the form with your basic details.
+                <div className="flex gap-[12px] items-start">
+                  <img src={ClickUp} alt="ClickUp" className="mt-[4px]" />
+
+                  <p className="text-[18px] font-normal text-[#5F6572] leading-[28px]">
+                    <strong>Live Audit:</strong> We review your current Ad
+                    Account & SEO setup in real-time.
                   </p>
                 </div>
-                <div className="flex gap-[12px]">
-                  <img src={ClickUp} alt="ClickUp" />
-                  <p className="text-[18px] font-normal text-[#5F6572] leading-[28px] ">
-                    Our marketing team will contact you within 24 hours.
+                <div className="flex gap-[12px] items-start">
+                  <img src={ClickUp} alt="ClickUp" className="mt-[4px]" />
+
+                  <p className="text-[18px] font-normal text-[#5F6572] leading-[28px]">
+                    <strong>Custom Roadmap:</strong> You leave the call with a
+                    step-by-step plan to double your leads.
                   </p>
                 </div>
-                <div className="flex gap-[12px]">
-                  <img src={ClickUp} alt="ClickUp" />
-                  <p className="text-[18px] font-normal text-[#5F6572] leading-[28px] ">
-                    Get a 30-minute consultation to explore your business
-                    growth.
+                <div className="flex gap-[12px] items-start">
+                  <img src={ClickUp} alt="ClickUp" className="mt-[4px]" />
+
+                  <p className="text-[18px] font-normal text-[#5F6572] leading-[28px]">
+                    <strong>Zero Obligation:</strong> No pressure. Just pure
+                    value and actionable insights.
                   </p>
                 </div>
               </div>
@@ -268,7 +278,10 @@ export default function Contactform() {
                                }
                         hover:bg-[#a9ff62]`}
                               >
-                                <p> {credits.subjet.toLocaleString()} </p>
+                                <p className="text-[14px] ">
+                                  {" "}
+                                  {credits.subjet.toLocaleString()}{" "}
+                                </p>
                                 {/* <p> </p> */}
                               </button>
                             ))}
@@ -289,7 +302,7 @@ export default function Contactform() {
                           disabled={isSubmitting}
                           className="w-full  px-[20px] py-[12px] cursor-pointer bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg text-[#FFFFFF] rounded-[10px] text-[18px] font-[500] leading-[24px] transition-all flex justify-center items-center gap-[12px] "
                         >
-                          Send message
+                          Secure My Free Audit
                           {isSubmitting && (
                             <RotateCw className="animate-spin size-6 " />
                           )}

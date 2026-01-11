@@ -39,12 +39,13 @@ export default function Home() {
             <div className="flex flex-col justify-between items-center lg:flex-row gap-[50px] bg-[#F9FAFB] py-[29px] px-[20px]  xl:pr-[45px] xl:pl-[75px] rounded-[16px] border border-[#E8E8E8] ">
               <div className="max-w-[498px]">
                 <h2 className="text-[32px] font-semibold text-[#121212] leading-[48px] tracking-[-1px]">
-                  We’re not just a team. We’re your digital marketing backbone.
+                  We’re not just a digital agency. We’re your revenue growth
+                  engine.
                 </h2>
                 <p className="text-[16px] font-normal text-[#5F6572] leading-[27px]">
-                  We help businesses grow by creating customized marketing
-                  strategies using smart technology, creative design, and proven
-                  methods across global markets.
+                  We help Dubai businesses scale by deploying automated sales
+                  funnels, precision advertising, and advanced SEO systems that
+                  drive measurable ROI across all channels.
                 </p>
                 <div className="flex  items-center">
                   <img src={img1} alt="" className="w-[118px]" />
@@ -56,7 +57,7 @@ export default function Home() {
                       <img src={ster} alt="ster" />
                       <img src={ster} alt="ster" />
                     </div>
-                    <p>Rated on various platforms</p>
+                    <p>Average Client Satisfaction</p>
                   </div>
                 </div>
               </div>
@@ -86,14 +87,14 @@ export default function Home() {
 
               <div className="flex flex-col justify-center gap-[24px] w-full ">
                 <div className="flex flex-col items-center justify-center md:flex-row md:justify-between gap-[20px] bg-[#F9FAFB] py-[42px] px-[32px] rounded-[16px] border border-[#E8E8E8]   ">
-                  <div className="max-w-[309px] flex flex-col gap-[14px] justify-center ">
-                    <h2 className="text-[32px] font-semibold text-[#121212] leading-[48px]">
-                      100+Clients Served{" "}
+                  <div className="max-w-[470px] flex flex-col gap-[14px] justify-center ">
+                    <h2 className="text-[25px] font-semibold text-[#121212] leading-[32px] md:text-[30px] md:leading-[48px]">
+                      AED 50M+ Revenue Generated
                     </h2>
                     <p className="text-[16px] font-medium text-[#5F6572] leading-[23.2px]">
-                      We’ve successfully served 100+ clients worldwide,
-                      delivering tailored marketing solutions that drive leads,
-                      conversions, and business growth.
+                      We don’t just deliver traffic; we deliver bankable
+                      results. Our data-driven campaigns have scaled Revenue for
+                      Dubai’s leading Real Estate, Medical, and Service brands.
                     </p>
                   </div>
                   <div className="max-w-[270px] w-full  lg:min-w-[200px] ">
@@ -106,14 +107,14 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col items-center justify-center md:flex-row md:justify-between gap-[20px] bg-[#F9FAFB] py-[42px] px-[32px] rounded-[16px] border border-[#E8E8E8]   ">
-                  <div className="max-w-[309px] flex flex-col gap-[14px] justify-center ">
-                    <h2 className="text-[32px] font-semibold text-[#121212] leading-[48px]">
-                      5+ Years Experience
+                  <div className="max-w-[470px] flex flex-col gap-[14px] justify-center ">
+                    <h2 className="text-[25px] font-semibold text-[#121212] leading-[32px] md:text-[30px] md:leading-[48px]">
+                      Certified Market Leaders
                     </h2>
                     <p className="text-[16px] font-medium text-[#5F6572] leading-[23.2px]">
-                      We’ve successfully served 100+ clients worldwide,
-                      delivering tailored marketing solutions that drive leads,
-                      conversions, and business growth.
+                      Stop wasting budget on guesswork. The senior team of our
+                      digital agency leverages advanced GEO & AEO strategies to
+                      position your brand as the undisputed authority.
                     </p>
                   </div>
                   <div className="min-w-[224px] lg:min-w-[180px]">
@@ -158,11 +159,11 @@ export default function Home() {
             <div>
               <div className="flex flex-col justify-center items-center gap-[18px]  ">
                 <h2 className="text-[48px] font-semibold text-[#2E3138] leading-[64px] text-center ">
-                  Latest Insights & Trends
+                  Market Intelligence & Growth Briefs
                 </h2>
                 <p className="max-w-[600px] text-[20px] font-normal text-[#5F6572] leading-[30px] text-center">
-                  Get insights, trends, and expert tips on design, technology,
-                  and innovation for growth.
+                  Strategies for the C-Suite. We analyze Dubai’s digital shifts
+                  so you can capitalize on them before your competitors do.
                 </p>
               </div>
 
@@ -175,20 +176,20 @@ export default function Home() {
                   />
                   <div className="flex flex-col gap-[24px] p-[24px] flex-grow">
                     <h3 className="text-[20px] font-normal text-[#2E3138] leading-[30px]">
-                      How to Improve Your Writing Efficiency: 5 Tips for Better
-                      Content
+                      The Shift to AEO: Why "Answer Engine Optimization" is
+                      replacing traditional SEO in 2026.
                     </h3>
                     <div className="flex gap-[20px] ">
                       <div className="flex gap-[4px] items-center ">
                         <img src={calandericon} alt="calandericon" />
                         <p className="text-[14px] font-normal text-[#5F6572] leading-[20px]">
-                          Agu 12
+                          Future Tech
                         </p>
                       </div>
                       <div className="flex gap-[4px] items-center ">
                         <img src={clockicon} alt="clockicon" />
                         <p className="text-[14px] font-normal text-[#5F6572] leading-[20px]">
-                          7 min read
+                          5 min read
                         </p>
                       </div>
                     </div>
@@ -202,14 +203,14 @@ export default function Home() {
                   />
                   <div className="flex flex-col gap-[24px] p-[24px] flex-grow">
                     <h3 className="text-[20px] font-normal text-[#2E3138] leading-[30px]">
-                      7 Proven Tips for Writing Engaging Blog Titles That
-                      Attract Readers
+                      Beyond Portals: How Dubai Real Estate Leaders are using AI
+                      Funnels to bypass Property Finder.
                     </h3>
                     <div className="flex gap-[20px] ">
                       <div className="flex gap-[4px] items-center ">
                         <img src={calandericon} alt="calandericon" />
                         <p className="text-[14px] font-normal text-[#5F6572] leading-[20px]">
-                          Agu 12
+                          Real Estate
                         </p>
                       </div>
                       <div className="flex gap-[4px] items-center ">
@@ -229,20 +230,20 @@ export default function Home() {
                   />
                   <div className="flex flex-col gap-[24px] p-[24px] flex-grow">
                     <h3 className="text-[20px] font-normal text-[#2E3138] leading-[30px]">
-                      10 Transformative Productivity Tips for the Overworked
-                      Professional
+                      The "High-Ticket" Ad Strategy: How to lower CPA while
+                      increasing lead quality.
                     </h3>
                     <div className="flex gap-[20px] ">
                       <div className="flex gap-[4px] items-center ">
                         <img src={calandericon} alt="calandericon" />
                         <p className="text-[14px] font-normal text-[#5F6572] leading-[20px]">
-                          Agu 12
+                          Paid Media
                         </p>
                       </div>
                       <div className="flex gap-[4px] items-center ">
                         <img src={clockicon} alt="clockicon" />
                         <p className="text-[14px] font-normal text-[#5F6572] leading-[20px]">
-                          7 min read
+                          4 min read
                         </p>
                       </div>
                     </div>
@@ -261,11 +262,11 @@ export default function Home() {
           <div className="px-[20px] md:px-[50px] py-[80px] xl:px-[112px] lg:py-[112px]">
             <div className="flex flex-col justify-center items-center gap-[18px] ">
               <h2 className="text-[32px] md:text-[48px] font-semibold text-[#121212] md:leading-[64px] text-center ">
-                Ready to Ignite Your Digital Growth?
+                Enough Theory. Let’s Talk Revenue.
               </h2>
               <p className="max-w-[600px] text-[20px] font-normal text-[#5F6572] leading-[30px] text-center ">
                 {
-                  "Let’s build a stronger online presence, a more powerful brand, and a marketing strategy that actually converts."
+                  "You have the vision. We have the blueprint. Partner with us to build a predictable growth engine that your competitors can’t ignore."
                 }
               </p>
               <div className="flex flex-wrap justify-center gap-[12px] mt-[40px]">
@@ -274,7 +275,7 @@ export default function Home() {
                   style={{ textDecoration: "none" }}
                 >
                   <button className="flex justify-center items-center gap-[6px] px-[48px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[24px] text-[#fff] bg-gradient-to-r from-pink-500 to-blue-500 shadow-lg hover:scale-105 transition  ">
-                    Get Started
+                    Claim Free Audit
                   </button>
                 </a>
                 <a
@@ -283,7 +284,7 @@ export default function Home() {
                   style={{ textDecoration: "none" }}
                 >
                   <button className="flex justify-center items-center gap-[6px] px-[30px] py-[16px] rounded-[8px] font-medium text-[18px] leading-[30px] text-[#5F6572] bg-[#fff] shadow-lg hover:scale-105 transition border border-gray-200 ">
-                    Schedule a Call
+                    See Our Results
                   </button>
                 </a>
               </div>
